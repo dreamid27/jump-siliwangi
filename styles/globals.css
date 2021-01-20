@@ -1,16 +1,99 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    font-family:  'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #F6F6F6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+    width: 1390px;
+    margin: auto;
 }
 
-* {
-  box-sizing: border-box;
+/*Navbar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4F5665;
+}
+
+nav .link-sm {
+    color: #0B132A;
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+button.cta-red {
+    background-color: transparent;
+    padding: 13px 45px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    color: #F53855;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button.btn-secondary{
+    margin-top: 50px;
+    background-color: #F53838;
+    box-shadow: 0px 25px 50px -14px rgb(245, 56, 56);
+    filter: blur(54);
+    padding: 17px 77px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*Hero*/
+section.hero{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+img.illustration-hero {
+    padding: 103px 0px;
+}
+
+.column-text-heading {
+    width: 50%;
+    padding-top: 125px;
+}
+
+p.hero-heading {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+p.text-p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4F5665;
+    line-height: 30px;
 }
