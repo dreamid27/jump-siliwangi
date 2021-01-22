@@ -36,12 +36,21 @@ nav .link-sm {
     padding-right: 30px;
 }
 
+nav .link-sm:hover{
+    color: #F53855;
+
+}
+
 
 .nav-links{
     display: flex;
     list-style: none;
     width: 40%;
     justify-content: space-between;
+}
+
+.nav-links :hover{
+    color: #F53855;
 }
 
 button.cta-red {
@@ -55,10 +64,20 @@ button.cta-red {
     cursor: pointer;
 }
 
+button.cta-red:hover{
+    background-color: #f0ebeb;
+}
+
+button.cta-red:active{
+    background-color: #F53838;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
 button.btn-secondary{
     margin-top: 50px;
     background-color: #F53838;
-    box-shadow: 0px 25px 50px -14px rgb(245, 56, 56);
+    box-shadow: 0px 20px 40px -12px rgb(245, 56, 56);
     filter: blur(54);
     padding: 17px 77px;
     border: none;
@@ -68,6 +87,14 @@ button.btn-secondary{
     font-weight: 700;
     cursor: pointer;
 }
+
+button.btn-secondary:active{
+    transform: scale(0.98);
+    box-shadow: 0px 5px 20px 1px rgba(245, 56, 56);
+    transition: 0.07s;
+}
+
+
 
 /*Hero*/
 section.hero{
@@ -85,10 +112,14 @@ img.illustration-hero {
     padding-top: 125px;
 }
 
-p.hero-heading {
+h1.hero-heading {
     font-weight: 500;
     font-size: 50px;
     line-height: 70px;
+}
+
+.hero-heading span{
+    font-weight: 700;
 }
 
 p.text-p {
@@ -97,3 +128,37 @@ p.text-p {
     color: #4F5665;
     line-height: 30px;
 }
+
+/*Features*/
+
+.features {
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: 0px 71px 60px -70px rgba(13,16,37,0.32);
+}
+
+.row-column{
+    width: 100%;
+    padding: 37px 91px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+    margin: auto;
+}
+
+.text-col {
+    margin-left: 36px;
+    margin-right: 130px;
+}
+
+.text-col p {
+    margin-top: 5px;
+    color: #4F5665;
+}
+ 
