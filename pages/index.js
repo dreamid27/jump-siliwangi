@@ -1,8 +1,15 @@
+import Head from 'next/head';
 import Link from 'next/link';
+
 
 function Home() {
     return (
       <div className = "container">
+        <Head>
+          <title>LasslesVPN</title>
+          <link rel = "icon" href = "icon.png"/>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
 
         {/*Navbar*/}
         
@@ -47,7 +54,7 @@ function Home() {
                 <h1>90+</h1>
                 <p>Users</p>
               </div>
-              <img src = "/gap.png"></img>
+              <img className = "img-1" src = "/gap.png"></img>
             </div>
             <div className = "column">
               <img src="/location.png"></img>
@@ -55,7 +62,7 @@ function Home() {
                 <h1>30+</h1>
                 <p>Locations</p>
               </div>
-              <img src = "/gap.png"></img>
+              <img className = "img-1" src = "/gap.png"></img>
             </div>
             <div className = "column">
               <img src="/server.png"></img>
@@ -65,7 +72,34 @@ function Home() {
               </div>
             </div>
           </div>
+        </section>
 
+        {/*Wrapper*/}
+
+        <section className = "wrapper">
+          <div className = "img-wrapper">
+            <img src = "/person.png"></img>
+          </div>
+          <div className = "text-wrapper">
+            <h1>We Provide Many<br></br>
+              Features You Can Use</h1>
+              <p className = "text-info">You can explore the features that we provide with fun<br></br>
+                and have their own functions each feature.</p>
+              <div className = "wrapper-feature">
+                <p>
+                  <img src = "/ceklis.png"/>Powerfull online protection.
+                </p>
+                <p>
+                  <img src = "/ceklis.png"/>Internet without borders.
+                </p>
+                <p>
+                  <img src = "/ceklis.png"/>Supercharged VPN.
+                </p>
+                <p>
+                  <img src = "/ceklis.png"/>No specific time limits.
+                </p>
+              </div>
+          </div>
         </section>
       </div>   
     )
