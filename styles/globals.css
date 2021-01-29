@@ -113,8 +113,8 @@ img.illustration-hero {
 }
 
 h1.hero-heading {
+    font-size: 55px;
     font-weight: 500;
-    font-size: 50px;
     line-height: 70px;
 }
 
@@ -124,7 +124,7 @@ h1.hero-heading {
 
 p.text-p {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 17px;
     color: #4F5665;
     line-height: 30px;
 }
@@ -188,14 +188,15 @@ p.text-p {
 .text-wrapper h1{
     color: #0B132A;
     line-height: 50px;
+    font-size: 37px;
     font-weight: 500;
 }
 
 .text-info{
     color: #4F5665;
     line-height: 30px;
+    font-size: 17px;
     font-weight: 400;
-    size: 16px;
     padding: 20px 0;
 }
 
@@ -203,8 +204,9 @@ p.text-p {
     padding: 15px 0;
     display: flex;
     color:#4F5665;
+    font-size: 16px;
     font-weight: 400;
-    size: 14px;
+    
 }
 
 .wrapper-feature p img{
