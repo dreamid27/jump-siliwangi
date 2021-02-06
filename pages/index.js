@@ -79,7 +79,7 @@ export default function Home() {
           <div className = {styles['text-wrapper']}>
             <h1>We Provide Many<br></br>
               Features You Can Use</h1>
-              <p className = "text-info">You can explore the features that we provide with fun<br></br>
+              <p className = {styles['text-info']}>You can explore the features that we provide with fun<br></br>
                 and have their own functions each feature.</p>
               <div className = {styles['wrapper-feature']}>
                 <p>
@@ -132,7 +132,7 @@ export default function Home() {
               <div className = {styles['pricing-card']}>
                 <div className = {styles['pricing-img']}>
                   <img src = "/price.png"></img>
-                  <h3>Free Plan</h3>
+                  <h3>Standard Plan</h3>
                 </div>
                 <div className = {styles['pricing-description']}>
                   <p>
@@ -142,21 +142,24 @@ export default function Home() {
                       <img src = "jam_check.png"/>Encrypted Connection
                   </p>
                   <p>
-                      <img src = "jam_check.png"/>No Traffic Logs
+                      <img src = "jam_check.png"/>Yes Traffic Logs
                   </p>
                   <p>
                       <img src = "jam_check.png"/>Works on All Devices
                   </p>
+                  <p>
+                      <img src = "jam_check.png"/>Connect Anywhere
+                  </p>
                 </div>
                 <div className = {styles['pricing-button']}>
-                  <h3>Free</h3>
+                  <h3>$9 <span>/ mo</span></h3>
                   <button className= {styles['btn-pricing']}>Select</button>
                 </div>
               </div>
               <div className = {styles['pricing-card']}>
                 <div className = {styles['pricing-img']}>
                   <img src = "/price.png"></img>
-                  <h3>Free Plan</h3>
+                  <h3>Premium Plan</h3>
                 </div>
                 <div className = {styles['pricing-description']}>
                   <p>
@@ -166,14 +169,20 @@ export default function Home() {
                       <img src = "jam_check.png"/>Encrypted Connection
                   </p>
                   <p>
-                      <img src = "jam_check.png"/>No Traffic Logs
+                      <img src = "jam_check.png"/>Yes Traffic Logs
                   </p>
                   <p>
                       <img src = "jam_check.png"/>Works on All Devices
                   </p>
+                  <p>
+                      <img src = "jam_check.png"/>Connect Anywhere
+                  </p>
+                  <p>
+                      <img src = "jam_check.png"/>Get New Features
+                  </p>
                 </div>
                 <div className = {styles['pricing-button']}>
-                  <h3>Free</h3>
+                  <h3>$12 <span>/ mo</span></h3>
                   <button className= {styles['btn-pricing']}>Select</button>
                 </div>
               </div>
