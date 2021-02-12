@@ -214,7 +214,7 @@ export default function Home() {
             <div className={styles['testi-row-card']}>
               <div className={styles['testi-card']}>
                 <div className={styles['testi-card-heading']}>
-                  <img classname = "user" src="/pp1.png" alt=""/>
+                  <img className = "user" src="/pp1.png" alt=""/>
                   <div className={styles['testi-name']}>
                     <h1>Viezh Robert
                     <span><br></br>Warsaw, Poland</span></h1>

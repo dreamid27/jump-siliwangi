@@ -10,6 +10,7 @@ a.logo {
 }
 
 .nav {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -522,6 +523,7 @@ section.testimonial {
     align-items: center;
     background: #FFFFFF;
     border-radius: 10px;
+    box-shadow: 0px 71px 60px -70px rgba(13,16,37,0.32);
 }
 
 .subs-heading h1 {
@@ -548,6 +550,12 @@ section.testimonial {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.subs-btn:active{
+    transform: scale(0.98);
+    box-shadow: 0px 2px 15px 1px rgba(245, 56, 56);
+    transition: 0.07s;
 }
 
 section.bg-footer {
@@ -604,25 +612,19 @@ section.bg-footer {
 }
 
 .social-media a.fb{
-    background: url(/facebook.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #F53838;
+    background: #F53838 url(/facebook.png) no-repeat center;
+    box-shadow: 0px 71px 60px -70px rgba(13,16,37,0.32);
 }
 
 .social-media a.twt {
     margin: 0 20px;
-    background: url(/twitter.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #F53838;
+    background: #F53838 url(/twitter.png) no-repeat center;
+    box-shadow: 0px 71px 60px -70px rgba(13,16,37,0.32);
 }
 
 .social-media a.ig {
-    background: url(/instagram.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #F53838;
+    background: #F53838 url(/instagram.png) no-repeat center;
+    box-shadow: 0px 71px 60px -70px rgba(13,16,37,0.32);
 }
 
 .footer-body{
