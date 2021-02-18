@@ -216,6 +216,7 @@ p.text-info{
     position: absolute;
     right: 0;
     left: 0;
+    padding-bottom: 300px;
     background-color: #fbfbfb;
 }
 
@@ -377,139 +378,7 @@ img.partners-img{
     margin-bottom: 50px;
 }
 
-section.testimonial {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 280px;
-}
 
-.testi-heading  {
-    text-align: center;
-    width: 100%;
-}
-
-.testi-heading h1 {
-    font-size: 35px;
-    line-height: 50px;
-    font-weight: 500;
-    padding-bottom: 20px;
-}
-
-.testi-heading p {
-    color: #4F5665;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    padding-bottom: 60px;
-}
-
-.testi-row-card {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 60px;
-    margin-right: -20px;
-    margin-bottom: 60px;
-}
-
-.testi-card {
-    width: 405px;
-    height: 250px;
-    border: 2px solid #DDDDDD;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.testi-card-heading {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.testi-name {
-    margin: 0 108px 0 20px;
-}
-
-.testi-name h1 {
-    font-size: 18px;
-    font-weight: 500;
-
-}
-
-.testi-name span {
-    color: #4F5665;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating p {
-    margin-right: 11px;
-}
-
-.testi-card-body {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.testi-tab {
-    display: flex;
-    width: 1090px;
-}
-
-.testi-tab span {
-    background-color: #DDE0E4;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-}
-
-.testi-tab span.dot {
-    margin: 0 15px;
-}
-
-.testi-tab span.active {
-    background-color: #F53838;
-    width: 45px;
-    border-radius: 15px;
-    margin-right: 15px;
-}
-
-.testi-tab-arrow-btn {
-    display: flex;
-}
-
-.testi-tab-arrow-btn span {
-    background: url(/left.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    border: 1px solid #F53855;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.testi-tab-arrow-btn span.active {
-    margin-left: 20px;
-    background: url(/right.png);
-    background-repeat: no-repeat;
-    background-color: #F53838;
-    background-position: center;
-}
 
 .subscribe {
     width: 1140px;
@@ -645,6 +514,15 @@ section.bg-footer {
     text-decoration: none;
     list-style: none;
     line-height: 40px;
+    cursor: pointer;
+}
+
+.footer-body li :hover {
+    color: #0B132A;
+}
+
+.footer-body li :active {
+    text-decoration: underline;
 }
 
 .footer-body .left .product {

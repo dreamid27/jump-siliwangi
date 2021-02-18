@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
+import Testi from '../components/Testi'
 import Link from 'next/link';
 export default function Home() {
 
@@ -206,83 +207,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.testimonial}>
-            <div className={styles['testi-heading']}>
-              <h1>Trusted by Thousands of<br></br>Happy Customer</h1>
-              <p>These are the stories of our customers who have joined us with great<br></br>pleasure when using this crazy feature.</p>
-            </div>
-            <div className={styles['testi-row-card']}>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-            </div>
-            <div className={styles.tab}>
-              <div className={styles['testi-tab']}>
-                <span className={styles.active}></span>
-                <span></span>
-                <span className={styles.dot}></span>
-                <span></span>
-              </div>
-              <div className={styles['testi-tab-arrow-btn']}>
-                <span></span>
-                <span className={styles.active}></span>
-              </div>
-            </div>
-          </section>
+          <Testi/>
         </div>
 
           <section className={styles['bg-footer']}>
@@ -310,30 +235,30 @@ export default function Home() {
                 <div className={styles.left}>
                   <h3>Product</h3>
                   <ul className = {styles.product}>
-                    <li><Link href = "/"><a>Download</a></Link></li>
-                    <li><Link href = "/"><a>Pricing</a></Link></li>
-                    <li><Link href = "/"><a>Locations</a></Link></li>
-                    <li><Link href = "/"><a>Server</a></Link></li>
-                    <li><Link href = "/"><a>Countries</a></Link></li>
-                    <li><Link href = "/"><a>Blog</a></Link></li>
+                    <li><a>Download</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>Locations</a></li>
+                    <li><a>Server</a></li>
+                    <li><a>Countries</a></li>
+                    <li><a>Blog</a></li>
                   </ul>
                 </div>
                 <div className={styles.mid}>
                   <h3>Engage</h3>
                   <ul className = {styles.engage}>
-                    <li><Link href = "/"><a>LaslesVPN</a></Link></li>
-                    <li><Link href = "/"><a>FAQ</a></Link></li>
-                    <li><Link href = "/"><a>Tutorials</a></Link></li>
-                    <li><Link href = "/"><a>About us</a></Link></li>
-                    <li><Link href = "/"><a>Privacy Policy</a></Link></li>
-                    <li><Link href = "/"><a>Terms of Service</a></Link></li>
+                    <li><a>LaslesVPN</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Tutorials</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Terms of Service</a></li>
                   </ul>
                 </div>
                 <div className={styles.right}>
                   <h3>Earn Money</h3>
                   <ul className = {styles.earn}>
-                    <li><Link href = "/"><a>Affiliate</a></Link></li>
-                    <li><Link href = "/"><a>Become Partner</a></Link></li>
+                    <li><a>Affiliate</a></li>
+                    <li><a>Become Partner</a></li>
                   </ul>
                 </div>
               </div>
