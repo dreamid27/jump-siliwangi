@@ -1,0 +1,113 @@
+.chooseContainer {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.chooseContainer h3 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.chooseContainer > p {
+  color: var(--greyColor);
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px 280px;
+}
+
+.packageContainer {
+  width: 330px;
+  border: 2px solid #dddddd;
+  margin-right: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.packageContainer[data-highlight="true"] {
+  border: 2px solid var(--actionColor);
+}
+
+.packageContainer:last-child {
+  margin-right: 0px;
+}
+
+.packageContainer img {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 145px;
+}
+
+.packageContainer h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.packageContainer > div[data-desc] {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.packageContainer > div > ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.packageContainer > div > ul > li {
+  padding-left: 35px;
+  line-height: 30px;
+  background-image: url("../../../../public/jam_check.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--greyColor);
+}
+
+.itemContainer {
+  display: flex;
+  margin-top: 60px;
+}
+
+.actionButton {
+  display: block;
+  padding: 13px 63px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 50px;
+  line-height: 19px;
+  color: var(--primaryColor);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.packageContainer[data-highlight="true"] .actionButton {
+  background-color: var(--actionColor);
+  color: var(--whiteColor);
+}
+
+.priceDesc {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: var(--greyColor);
+}
+
+.priceDesc > b {
+  color: var(--blackColor);
+  font-weight: 500;
+}
+
+.actionContainer {
+  align-self: flex-end;
+}

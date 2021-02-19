@@ -2,8 +2,23 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --primaryColor: #f53855;
+  --actionColor: #f53838;
+  --whiteColor: #ffffff;
+  --greyColor: #4f5665;
+  --greyColor2: #dde0e4;
+  --greyColor3: #afb5c0;
+  --blackColor: #0b132a;
+
+  --backgroundMiddle: #fbfbfb;
+  --backgroundFooter: #f8f8f8;
+
+  --mainSize: 1440px;
 }
 
 a {
@@ -13,4 +28,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: auto;
+  padding: 0px 150px;
 }

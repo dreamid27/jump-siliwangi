@@ -1,0 +1,25 @@
+.sectionMiddleContainer {
+  padding-bottom: 180px;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--backgroundMiddle);
+}
+
+.sectionMiddleWrapper {
+  width: var(--mainSize);
+  margin: auto;
+}
+
+.sectionFooter {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--backgroundFooter);
+}
