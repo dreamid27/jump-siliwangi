@@ -23,7 +23,7 @@
 }
 
 .testi-card {
-    width: 100%;
+    width: 400px;
     height: 250px;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
@@ -110,6 +110,7 @@
     width: 60px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.15s;
 }
 
 .testi-tab-arrow-btn .arrowbtn2 {
@@ -120,6 +121,7 @@
     border-radius: 50%;
     cursor: pointer;
     margin-left: 20px;
+    transition: 0.15s;
 }
 
 .testi-tab-arrow-btn .arrowbtn1:active {

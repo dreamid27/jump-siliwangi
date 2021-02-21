@@ -1,4 +1,4 @@
-import styles from '../styles/Testi.module.css'
+import styles from './Testi.module.css'
 import React, {Component} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -18,21 +18,16 @@ export default class Testi extends Component {
   }
     render() {
         const settings = {
-            dots: true,
-            infinite: true,
+            dots: false,
+            infinite: false,
             dotClass: "testi-tab",
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
             centerMode: true,
-            centerPadding: ' -100px',
             appendDots: dots => <ul>{dots}</ul>,
-    customPaging: i => (
-      <div className="ft-slick__dots--custom">
-        <div className="loading" />
-      </div>
-    )
+            variableWidth: true
   };
         return (
             <div className={styles.testimonial}>
@@ -94,82 +89,6 @@ export default class Testi extends Component {
                 “This is very unusual for my business that<br>
                 </br> currently requires a virtual private network<br>
                 </br>that has high security.”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
-                </div>
-              </div>
-              <div className={styles['testi-card']}>
-                <div className={styles['testi-card-heading']}>
-                  <img className = "user" src="/pp1.png" alt=""/>
-                  <div className={styles['testi-name']}>
-                    <h1>Viezh Robert
-                    <span><br></br>Warsaw, Poland</span></h1>
-                  </div>
-                  <div className={styles.rating}>
-                  <p>4.5</p>
-                  <img src="/star.png" alt=""/>
-                  </div>
-                </div>
-                <div className={styles['testi-card-body']}>
-                “Wow... I am very happy to use this VPN, it<br></br>
-                turned out to be more than my expectations<br></br>
-                and so far there have been no problems.<br></br>
-                LaslesVPN always the best”.
                 </div>
               </div>
               </Slider>
