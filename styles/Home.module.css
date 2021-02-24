@@ -371,11 +371,12 @@ img.partners-img {
 }
 
 .subscribe {
-  width: 1140px;
+  position: relative;
+  width: 1210px;
   height: 233px;
   top: 4509.28px;
   padding: 58px 70px;
-  margin: 150px;
+  margin: 150px 110px;
   position: absolute;
   display: flex;
   justify-content: space-between;

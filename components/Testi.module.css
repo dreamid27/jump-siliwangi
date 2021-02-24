@@ -22,7 +22,6 @@
   margin-bottom: 60px;
 }
 
-
 .testi-card {
   margin-left: 337px;
   margin-right: -290px;
@@ -71,72 +70,14 @@
 /*end testi*/
 
 .tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.testi-tab {
-  display: flex;
-  width: 1090px;
+  float: right;
+  margin-right: 350px;
+  margin-top: -23px;
 }
 
 .testi-row-card :global(.slick-active) .testi-card {
   border: solid 2px #f53838;
   transition: 0.5s;
-}
-
-.testi-row-card :global(.slick-dots li) {
-  width: auto;
-  margin: 0px;
-  margin-right: 15px;
-}
-
-.testi-row-card :global(.slick-dots) {
-  text-align: left;
-  position: relative;
-  margin-top: 80px;
-  padding: 0px calc((100% - 1440px) / 2 + 150px);
-}
-
-.testi-row-card :global(.slick-dots li button) {
-  width: 15px;
-  height: 15px;
-  background: var(--greyColor2);
-  border-radius: 20px;
-  transition: all ease-out 0.25s;
-}
-
-.testi-row-card :global(.slick-dots li button::before) {
-  content: "";
-}
-
-.testi-row-card :global(.slick-dots li.slick-active button) {
-  background: #f53838;
-  width: 45px;
-}
-
-.testi-tab li {
-  background-color: #dde0e4;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  list-style: none;
-}
-
-.testi-tab li.dot {
-  margin: 0 15px;
-}
-
-.testi-tab li.active {
-  background-color: #f53838;
-  width: 45px;
-  border-radius: 15px;
-  margin-right: 15px;
-}
-
-.testi-tab-arrow-btn {
-  display: flex;
 }
 
 .testi-tab-arrow-btn .arrowbtn1 {
