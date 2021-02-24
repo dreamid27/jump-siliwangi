@@ -1,8 +1,8 @@
 import styles from "./Testi.module.css";
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 export default class Testi extends Component {
   constructor(props) {
@@ -20,15 +20,14 @@ export default class Testi extends Component {
     const settings = {
       dots: false,
       infinite: false,
-      dotClass: "testi-tab",
-      speed: 500,
+      speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       centerMode: false,
-      appendDots: (dots) => <ul>{dots}</ul>,
       variableWidth: true,
     };
+    
     return (
       <div className={styles.testimonial}>
         <div className={styles["testi-heading"]}>
@@ -138,12 +137,12 @@ export default class Testi extends Component {
           </Slider>
         </div>
         <div className={styles.tab}>
-          <ul className={styles["testi-tab"]}>
+          <div className={styles["testi-tab"]}>
             <li className={styles.active}></li>
             <li></li>
             <li className={styles.dot}></li>
             <li></li>
-          </ul>
+          </div>
           <div className={styles["testi-tab-arrow-btn"]}>
             <button
               onClick={this.previous}
