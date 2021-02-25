@@ -1,0 +1,40 @@
+.wrapper {
+  margin-top: 95px;
+  margin-bottom: 129px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-wrapper {
+  margin-left: 169px;
+  margin-right: 150px;
+}
+
+.text-wrapper h1 {
+  color: #0b132a;
+  line-height: 50px;
+  font-size: 37px;
+  font-weight: 500;
+}
+
+p.text-info {
+  color: #4f5665;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.wrapper-feature p {
+  padding: 15px 0;
+  display: flex;
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper-feature p img {
+  margin-right: 12px;
+}
