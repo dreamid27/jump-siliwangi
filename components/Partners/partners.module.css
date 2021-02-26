@@ -1,0 +1,39 @@
+.partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partners-heading {
+  text-align: center;
+  margin-bottom: 155px;
+}
+
+.partners-heading h1 {
+  font-size: 35px;
+  line-height: 50px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.partners-heading p {
+  font-size: 16px;
+  color: #4f5665;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.partners-heading span {
+  font-weight: 500;
+}
+
+img.partners-img {
+  width: 100%;
+}
+
+.partners-company img {
+  padding: 74px 55px;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}

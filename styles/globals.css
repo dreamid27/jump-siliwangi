@@ -1,13 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
-*{
-    font-family:  'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
+.testiTab {
+  margin-top: 80px;
+  margin-left: 339px;
+}
+
+.testiTab li {
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.testiTab li button {
+  border: none;
+  background: #dde0e4;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  outline: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.testiTab li.slick-active button {
+  background-color: #f53838;
+  height: 15px;
+  width: 35px;
+  outline: 0;
+}

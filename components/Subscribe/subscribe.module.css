@@ -1,0 +1,48 @@
+.subscribe {
+  position: relative;
+  width: 1210px;
+  height: 233px;
+  top: 4509.28px;
+  padding: 58px 70px;
+  margin: 150px 110px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 71px 60px -70px rgba(13, 16, 37, 0.32);
+}
+
+.subs-heading h1 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.subs-heading p {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subs-btn button {
+  background-color: #f53838;
+  box-shadow: 0px 20px 40px -12px rgb(245, 56, 56);
+  filter: blur(54);
+  padding: 17px 65px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subs-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 2px 15px 1px rgba(245, 56, 56);
+  border-radius: 10px;
+  transition: 0.07s;
+}

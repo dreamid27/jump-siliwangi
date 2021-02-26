@@ -1,0 +1,110 @@
+.testi-heading {
+  text-align: center;
+  width: 100%;
+}
+
+.testi-heading h1 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.testi-heading p {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 60px;
+}
+
+.testi-row-card {
+  margin-bottom: 60px;
+}
+
+.testi-card {
+  margin-left: 337px;
+  margin-right: -290px;
+  width: 450px;
+  height: 250px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.testi-card-heading {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.testi-name {
+  margin: 0 108px 0 20px;
+}
+
+.testi-name h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testi-name span {
+  color: #4f5665;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating p {
+  margin-right: 11px;
+}
+
+.testi-card-body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*end testi*/
+
+.tab {
+  float: right;
+  margin-right: 350px;
+  margin-top: -23px;
+}
+
+.testi-row-card :global(.slick-active) .testi-card {
+  border: solid 2px #f53838;
+  transition: 0.5s;
+}
+
+.testi-tab-arrow-btn .arrowbtn1 {
+  background: url(/left.png) no-repeat center #ffffff;
+  border: 1px solid #f53855;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.testi-tab-arrow-btn .arrowbtn2 {
+  background: url(/right.png) no-repeat center #ffffff;
+  border: 1px solid #f53855;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: 0.15s;
+}
+
+.testi-tab-arrow-btn .arrowbtn1:active {
+  background: url(/hover-left.png) no-repeat center #f53838;
+}
+
+.testi-tab-arrow-btn .arrowbtn2:active {
+  background: url(/hover-right.png) no-repeat center #f53838;
+}
