@@ -1,0 +1,117 @@
+section.pricing {
+  padding-top: 80px;
+  width: 100%;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-heading h1 {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pricing-heading p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #4f5665;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.row-pricing-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+}
+
+.pricing-card {
+  height: auto;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.pricing-card:active {
+  border: 2px solid #f53838;
+}
+
+.pricing-description {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-img {
+  padding-top: 70px;
+}
+
+.pricing-img h3 {
+  font-size: 18px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.pricing-description p {
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 400;
+  color: #4f5665;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-description img {
+  padding-right: 30px;
+}
+
+.pricing-button h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.pricing-button span {
+  color: #4f5665;
+  font-weight: 400;
+}
+
+.pricing-button {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-button button {
+  background-color: transparent;
+  padding: 10px 61px;
+  border: 2px solid #f53855;
+  border-radius: 50px;
+  color: #f53855;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pricing-button button:hover {
+  background-color: #f0ebeb;
+}
+
+.pricing-button button:active {
+  background-color: #f53838;
+  color: #ffffff;
+  box-shadow: 0px 20px 40px -12px rgb(245, 56, 56);
+  filter: blur(54);
+}
