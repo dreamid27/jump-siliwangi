@@ -1,4 +1,4 @@
-import styles from "./Testi.module.css";
+import styles from "./testi.module.css";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
