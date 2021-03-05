@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import styles from './Navbar.module.scss'
+import Logo from '@public/logo.png'
 
 function Navbar() {
     return (
         <div className={styles.NavContainer}>
             <Link href="/">
-                <img src="/logo.png" alt="logo" />
+                <img src={Logo} alt="logo" />
             </Link>
             <ul className={styles.NavLinks}>
                 <li>
