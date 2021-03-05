@@ -1,0 +1,47 @@
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+}
+
+.featuresLeft {
+    padding: 95.83px 169.48px 0 0;
+}
+
+.featuresRight {
+    padding-top: 150px;
+}
+
+.featuresRight h1 {
+    width: 383.41px;
+    color: #0B132A;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+.featuresRight p {
+    width: 427.88px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.featuresDetail {
+    display: flex;
+    padding-top: 20px;
+}
+
+.featuresDetail img {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 18px;
+}
+
+.featuresDetail p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #4F5665;
+}
