@@ -1,0 +1,26 @@
+.navbarContainer {
+    display: flex;
+    margin-top: 31px;
+    justify-content: center;
+}
+
+.navbarContainer img {
+    /* margin-left: 238px; */
+}
+
+.navbarList {
+    margin: 21px 40px 0 564.18px;
+}
+
+.navbarList a {
+    margin-left: 40px;
+}
+
+.navbarContainer .contact {
+    color: #FF383D;
+    width: 154px;
+    height: 55px;
+    background-color: #FFF;
+    border: 2px solid #FF383D;
+    border-radius: 46px;
+}

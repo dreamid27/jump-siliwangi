@@ -1,0 +1,38 @@
+.overviewContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.overviewImg {
+}
+
+.overviewDesc h1 {
+    margin: 203px 0 0 171px;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.overviewDesc span {
+    display: block;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FA5652;
+}
+
+.overviewDesc p {
+    width: 648px;
+    font-size: 20px;
+    line-height: 43px;
+    color: #4B4F51;
+}
+
+.btnDesc {
+    font-size: 20px;
+    line-height: 23px;
+    color: #FA5652;
+    width: 200px;
+    height: 65px;
+    border-radius: 65px;
+    border: none;
+    background: rgba(250, 86, 82, 0.15);
+}
