@@ -3,17 +3,29 @@ import NavBar from './NavBar'
 import Overview from './Overview'
 import Header from './Header'
 import Contagion from './Contagion'
+import Symptomps from './Symptomps'
+import Symtomps from './Symptomps'
 
 function Home() {
     return (
         <div>
-            <div>
+            <div className="wrapper">
                 <NavBar />
             </div>
             <div>
                 <Header />
                 <Overview />
-                <Contagion />
+                <div className={styles.sectionMiddleContainer}>
+                    <div className="wrapper">
+                    <Contagion />
+                    <Symtomps />
+                    </div>
+                </div>
+                <div className={styles.sectionFooter}>
+                    <div className="wrapper">
+
+                    </div>
+                </div>
             </div>
         </div>
     )

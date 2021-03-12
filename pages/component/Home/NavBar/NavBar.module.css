@@ -1,19 +1,20 @@
 .navbarContainer {
     display: flex;
     margin-top: 31px;
-    justify-content: center;
+    align-items: center;
 }
 
 .navbarContainer img {
-    /* margin-left: 238px; */
+    margin-left: 238px;
 }
 
 .navbarList {
-    margin: 21px 40px 0 564.18px;
+    margin: 0 40px 0 564.18px;
 }
 
-.navbarList a {
+.navbarList > a {
     margin-left: 40px;
+    color: #035755;
 }
 
 .navbarContainer .contact {

@@ -1,14 +1,17 @@
 .headerContainer {
     display: flex;
-    margin-left: 243px;
+    align-items: center;
     justify-content: center;
 }
 
 .headerDesc {
-    margin-top: 315px;
+    align-content: center;
+    /* margin-top: 315px; */
+    margin-left: 243px;
 }
 
 .headerDesc h1 {
+    color: #035755;
     width: 633px;
     font-size: 52px;
     line-height: 72px;
@@ -23,6 +26,7 @@
 }
 
 .headerDesc p {
+    color: #4B4F51;
     font-size: 24px;
     line-height: 45px;
     width: 641px;

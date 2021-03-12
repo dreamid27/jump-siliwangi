@@ -1,0 +1,33 @@
+.symtompsContainer {
+    margin-top: 148px;
+    margin-bottom: 139px;
+}
+
+.symtompsContainer span {
+    font-size: 29px;
+    color: #FA5652;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+}
+
+.symtompsContainer h1 {
+    font-size: 50px;
+    line-height: 59px;
+    color: #035755;
+    text-align: center;
+}
+
+.symtompsContainer p {
+    margin-top: 31px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #4B4F51;
+    width: 716px;
+    margin: auto;
+    text-align: center;
+}
+
+.imgWrap {
+    text-align: center;
+}

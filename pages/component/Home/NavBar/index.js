@@ -1,5 +1,24 @@
 import styles from './NavBar.module.css'
 
+const navbarList = [
+    {
+        label: 'Overview',
+        url: '/overview'
+    },
+    {
+        label: 'Contagion',
+        url: '/contagion'
+    },
+    {
+        label: 'Symptoms',
+        url: '/symptoms'
+    },
+    {
+        label: 'Prevention',
+        url: '/prevention'
+    },
+]
+
 function NavBar() {
     return(
         <div className={styles.navbarContainer}>
@@ -7,10 +26,9 @@ function NavBar() {
                 <img src='/logo.png' ></img>
             </div>
             <div className={styles.navbarList}>
-                <a>Overview</a>
-                <a>Contagion</a>
-                <a>Symptoms</a>
-                <a>Prevention</a>
+                {navbarList.map((obj) => 
+                    <a href={obj.url}> {obj.label} </a>
+                )}
             </div>
             <div className={styles.actionContainer}>
                 <button className={styles.contact}>Contact</button>

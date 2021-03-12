@@ -3,6 +3,7 @@
 }
 
 .contagionContainer h1 {
+    color: #035755;
     font-size: 50px;
     line-height: 59px;
 }
@@ -20,4 +21,53 @@
     width: 570px;
     font-size: 18px;
     line-height: 38px;
+}
+
+.wrapContagion {
+    margin-top: 111px;
+    margin-bottom: 149px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardContagion {
+    padding: 65px 52px 78px 53px;
+    width: 461px;
+    height: 575px;
+    margin: 0 15px;
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
+}
+
+.cardContagion[data-highlight="true"] {
+    border-bottom: 5px solid #FA5652;
+}
+
+.cardContagion:hover {
+    border-bottom: 5px solid #FA5652;
+}
+
+.avaContagion {
+    margin: auto;
+    width: 284px;
+    height: 294px;
+    display: flex;
+    align-items: center
+}
+
+.descContagion {
+    margin-top: 54px;
+}
+
+.descContagion .label {
+    color: #035755;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.descContagion .desc {
+    color: #4B4F51;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+
 }
