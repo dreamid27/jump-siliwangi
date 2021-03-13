@@ -33,7 +33,7 @@ const Menu = () => {
             {menuList.map((obj) => <a href={obj.url}>{obj.label}</a>)}
         </div>
         <div className={styles.actionContainer}>
-            <a className={styles.signInButton}>
+            <a className={styles.signInButton} onClick={() => dataLayer.push({'event': 'Click SignIn'})}>
                 Sign In
             </a>
             <a className={styles.signUpButton}>
