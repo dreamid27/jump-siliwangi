@@ -1,10 +1,13 @@
 import styles from './Overview.module.css'
+import illustration from '@public/illustration2.png'
+import bg1 from '@public/bg.png'
+import bg2 from '@public/bg2.png'
 
 function Overview() {
     return(
         <div className={styles.overviewContainer}>
             <div className={styles.overviewImg}>
-                <img src='/illustration2.png'></img>
+                <img src={illustration}></img>
             </div>
             <div className={styles.overviewDesc}>
                 <h1>
@@ -15,6 +18,8 @@ function Overview() {
                 </p>
                 <button className={styles.btnDesc}>Learn More</button>
             </div>
+            <div><img className={styles.bgFirst} src={bg1}></img></div>
+            <div><img className={styles.bgSecond} src={bg2}></img></div>
         </div>
     )
 }

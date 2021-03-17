@@ -1,0 +1,88 @@
+.treadmentContainer {
+
+}
+
+.treadmentContainer span {
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    color: var(--redHeaderColor);
+}
+
+.treadmentContainer h1 {
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: var(--greenHeaderColor);
+    margin-bottom: 31px;
+}
+
+.treadmentContainer p {
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    width: 650px;
+    color: var(--paragraphColor);
+    margin: auto;
+}
+
+.treadmentContent {
+    margin-top: 70px;
+    display: flex;
+    margin-left: 222px;
+    justify-content: center;
+}
+
+.treadmentContent:nth-child(odd) {
+
+}
+
+.treadmentContent:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.descContent {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.numberContent {
+    width: 75px;
+    height: 75px;
+    background: rgba(250,86,82, 0.15);
+    border-radius: 50%;
+}
+
+.numberContent .no {
+    text-align: center;
+    font-size: 44px;
+    color: var(--redHeaderColor);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.descWrap {
+    width: 532px;
+    margin-left: 40px;
+}
+
+.descWrap .title {
+    color: var(--greenHeaderColor);
+    font-size: 47px;
+    line-height: 69px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.descWrap .desc {
+    color: var(--paragraphColor);
+    font-size: 18px;
+    line-height: 39px;
+    text-transform: capitalize;
+}
+
+.imgContent {
+    margin-right: 150px;
+}

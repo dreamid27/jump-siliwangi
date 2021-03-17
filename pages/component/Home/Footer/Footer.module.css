@@ -1,0 +1,31 @@
+.footerTop {
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo {
+    margin: 0 213px 0 242px;
+}
+
+.footerList ul {
+    display: flex;
+    list-style: none;
+    color: var(--greenColor);
+}
+
+.footerList li {
+    margin-left: 70px;
+}
+
+.footerImg {
+    margin-left: 224px;
+}
+.footerImg img {
+    margin-right: 40px;
+}
+
+.footerBottom {
+    margin-top: 67px;
+    text-align: center;
+    color: var(--paragraphColor);
+}

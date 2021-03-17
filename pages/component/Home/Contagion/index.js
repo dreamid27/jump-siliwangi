@@ -1,23 +1,27 @@
-import styles from './Contagion.module.css'
+import styles from './Contagion.module.css';
+import avatar from '@public/ava.png';
+import hand from '@public/hand.png';
+import cup from '@public/cup.png';
+import bg from '@public/bg.png';
 
 const contagionList = [
     {
-        avatar: '/ava.png',
+        avatar: avatar,
         label: 'Air Transmission',
         desc: 'Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify',
-        // highlight: trus
+        highlight: true
     },
     {
-        avatar: '/hand.png',
+        avatar: hand,
         label: 'Human Contacts',
         desc: 'Washing your hands is one of thesimplest ways you can protect',
-        // highlight: false
+        highlight: false
     },
     {
-        avatar: '/cup.png',
+        avatar: cup,
         label: 'Containted Objects',
         desc: 'Use the tissue while sneezing,In this way, you can protect your droplets.',
-        // highlight: false
+        highlight: false
     }
 ]
 
@@ -34,10 +38,12 @@ function Contagion() {
                 <p>
                     Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type
                 </p>
+                <div><img src={bg} className={styles.bgThird}></img></div>
             </div>
             <div className={styles.wrapContagion}>
+                {/* <div><img src="/bg.png" className={styles.bgThird}></img></div> */}
                 {contagionList.map(obj =>
-                    <div className={styles.cardContagion}>
+                    <div className={styles.cardContagion} data-highlight={obj.highlight}>
                         <div className={styles.avaContagion}>
                             <img src={obj.avatar}></img>
                         </div>
@@ -45,6 +51,7 @@ function Contagion() {
                             <div className={styles.label}>{obj.label}</div>
                             <div className={styles.desc}>{obj.desc}</div>
                         </div>
+                        <div className={styles.indicator} data-highlight={obj.highlight}></div>
                     </div>
                 )}
             </div>

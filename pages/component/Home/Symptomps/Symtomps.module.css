@@ -5,7 +5,7 @@
 
 .symtompsContainer span {
     font-size: 29px;
-    color: #FA5652;
+    color: var(--redHeaderColor);
     line-height: 35px;
     display: block;
     text-align: center;
@@ -14,15 +14,16 @@
 .symtompsContainer h1 {
     font-size: 50px;
     line-height: 59px;
-    color: #035755;
+    color: var(--greenHeaderColor);
     text-align: center;
+    margin-bottom: 31px;
 }
 
 .symtompsContainer p {
     margin-top: 31px;
     font-size: 18px;
     line-height: 38px;
-    color: #4B4F51;
+    color: var(--paragraphColor);
     width: 716px;
     margin: auto;
     text-align: center;
@@ -30,4 +31,16 @@
 
 .imgWrap {
     text-align: center;
+}
+
+.bg1 {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 100px;
+}
+
+.bg2 {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 1800px;
 }

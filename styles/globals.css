@@ -7,6 +7,15 @@ body {
   font-family: 'Red Hat Display', sans-serif;
 }
 
+:root {
+  --paragraphColor: #4B4F51;
+  --actionColor: #FB4C47;
+  --greenHeaderColor: #035755;
+  --redHeaderColor: #FA5652;
+  --greenColor: #0C6C44;
+  --backgroungColor: linear-gradient(0deg, rgba(255,252,252,1) 0%, rgba(255,248,248,1) 60%, rgba(255,249,249,1) 100%);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -14,6 +23,8 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {

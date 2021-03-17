@@ -1,6 +1,6 @@
 .navbarContainer {
     display: flex;
-    margin-top: 31px;
+    padding-top: 31px;
     align-items: center;
 }
 
@@ -8,20 +8,38 @@
     margin-left: 238px;
 }
 
-.navbarList {
+.navbarListWrap {
     margin: 0 40px 0 564.18px;
+    display: flex;
+}
+
+.navbarList {
+}
+
+.navbarList a[data-highlight="true"] {
+    color: var(--actionColor);
+}
+
+.dotNavbar[data-highlight="true"] {
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--actionColor);
 }
 
 .navbarList > a {
-    margin-left: 40px;
+    margin: 0 20px;
     color: #035755;
 }
 
 .navbarContainer .contact {
-    color: #FF383D;
+    color: var(--actionColor);
     width: 154px;
     height: 55px;
     background-color: #FFF;
-    border: 2px solid #FF383D;
+    border: 2px solid var(--actionColor) ;
     border-radius: 46px;
 }

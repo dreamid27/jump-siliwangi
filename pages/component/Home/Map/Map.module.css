@@ -1,0 +1,107 @@
+.mapContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 185px;
+    margin-bottom: 149px;
+}
+
+.mapWrap {
+    margin-right: 40px;
+}
+
+.reportWrap {
+    width: 504px;
+    height: 635px;
+    background-color: #FFF;
+}
+
+.headList {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.headList h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 57px;
+    color: var(--greenColor);
+}
+
+.reportList {
+    margin: 53px 55px;
+}
+
+.navList {
+    display: flex;
+    margin-left: 17px;
+    width: 86px;
+    height: 49px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.navList img {
+    margin: 0 10px;
+}
+
+.cardList {
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.flagImg {
+    margin-right: 27px;
+}
+
+.cardList h1 {
+    font-size: 31px;
+    color: var(--greenHeaderColor);
+}
+
+.cardList h2 {
+    font-size: 24px;
+    color: var(--greenHeaderColor);
+    margin-right: 21px;
+    text-align: right;
+    width: 100%;
+}
+
+
+.mapNavigatorWrap {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -400px;
+    display: flex;
+}
+
+.mapNavigator {
+    background-color: #FFF;
+    margin-right: 782px;
+    width: 86px;
+    height: 243px;
+    text-align: center;
+}
+
+.mapNavigatorTop img{
+    margin-top: 22px;
+}
+
+.mapNavigatorBottom {
+    margin-top: 22px;
+}
+
+
+.searchWrap {
+    width: 76px;
+    height: 73px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.searchWrap img {
+    margin-top: 22px;
+}

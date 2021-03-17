@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import illustration from '@public/illustration1.png'
 
 function Header() {
     return (
@@ -13,7 +14,7 @@ function Header() {
                 <button className={styles.btnDesc}>Let Us Help</button>
             </div>
             <div className={styles.headerImg}>
-                <img src='/illustration1.png'></img>
+                <img src={illustration}></img>
             </div>
         </div>
     )

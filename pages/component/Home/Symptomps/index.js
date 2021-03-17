@@ -1,4 +1,7 @@
-import styles from './Symtomps.module.css'
+import styles from './Symtomps.module.css';
+import symptomps from '@public/symptomps.png';
+import bg from '@public/symbg.png';
+import bg2 from '@public/symbg2.png'
 
 function Symtomps() {
     return(
@@ -15,8 +18,10 @@ function Symtomps() {
                 </p>
             </div>
             <div className={styles.imgWrap}>
-                <img src="/symptomps.png"></img>
+                <img src={symptomps}></img>
             </div>
+            <img className={styles.bg1} src={bg}></img>
+            <img className={styles.bg2} src={bg2}></img>
         </div>
     )
 }

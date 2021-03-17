@@ -3,21 +3,22 @@
 }
 
 .contagionContainer h1 {
-    color: #035755;
+    color: var(--greenHeaderColor);
     font-size: 50px;
     line-height: 59px;
+    margin-bottom: 31px;
 }
 
 .contagionContainer span {
     display: block;
-    color: #FA5652;
+    color: var(--redHeaderColor);
     font-size: 29px;
     line-height: 35px;
 }
 
 .contagionContainer p {
     margin: auto;
-    color: #4B4F51;
+    color: var(--paragraphColor);
     width: 570px;
     font-size: 18px;
     line-height: 38px;
@@ -31,19 +32,19 @@
 }
 
 .cardContagion {
-    padding: 65px 52px 78px 53px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-top: 65px;
     width: 461px;
     height: 575px;
     margin: 0 15px;
     box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
 }
 
-.cardContagion[data-highlight="true"] {
-    border-bottom: 5px solid #FA5652;
-}
-
-.cardContagion:hover {
-    border-bottom: 5px solid #FA5652;
+.indicator[data-highlight="true"] {
+    height: 6px;
+    margin-top: 38px;
+    background-color: var(--redHeaderColor);
 }
 
 .avaContagion {
@@ -55,19 +56,26 @@
 }
 
 .descContagion {
+    padding: 0 52px;
     margin-top: 54px;
 }
 
 .descContagion .label {
-    color: #035755;
+    color: var(--greenHeaderColor);
     font-size: 36px;
     line-height: 52px;
 }
 
 .descContagion .desc {
-    color: #4B4F51;
+    color: var(--paragraphColor);
     font-size: 18px;
     line-height: 33px;
     text-align: center;
 
+}
+
+.bgThird {
+    position: absolute;
+    margin-left: -865px;
+    margin-top: 410px;
 }

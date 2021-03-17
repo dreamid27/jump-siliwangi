@@ -1,17 +1,15 @@
 .headerContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .headerDesc {
     align-content: center;
-    /* margin-top: 315px; */
     margin-left: 243px;
 }
 
 .headerDesc h1 {
-    color: #035755;
+    color: var(--greenHeaderColor);
     width: 633px;
     font-size: 52px;
     line-height: 72px;
@@ -20,13 +18,13 @@
 
 .headerDesc h1 span {
     display: block;
-    color: #FA5652;
+    color: var(--redHeaderColor);
     font-size: 32px;
     line-height: 39px;
 }
 
 .headerDesc p {
-    color: #4B4F51;
+    color: var(--paragraphColor);
     font-size: 24px;
     line-height: 45px;
     width: 641px;
@@ -34,7 +32,7 @@
 
 .btnDesc {
     margin-top: 54px;
-    background: #FB4C47;
+    background: var(--actionColor);
     color: #FFF;
     font-size: 24px;
     width: 250px;

@@ -1,6 +1,5 @@
 .overviewContainer {
     display: flex;
-    justify-content: center;
 }
 
 .overviewImg {
@@ -11,7 +10,7 @@
 }
 
 .overviewDesc h1 {
-    color: #035755;
+    color: var(--greenHeaderColor);
     margin: 203px 0 0 0;
     font-size: 50px;
     line-height: 59px;
@@ -21,23 +20,37 @@
     display: block;
     font-size: 29px;
     line-height: 35px;
-    color: #FA5652;
+    color: var(--redHeaderColor);
 }
 
 .overviewDesc p {
+    margin-top: 18px;
     width: 648px;
     font-size: 20px;
     line-height: 43px;
-    color: #4B4F51;
+    color: var(--paragraphColor);
 }
 
 .btnDesc {
+    margin-top: 56px;
     font-size: 20px;
     line-height: 23px;
-    color: #FA5652;
+    color: var(--redHeaderColor);
     width: 200px;
     height: 65px;
     border-radius: 65px;
     border: none;
     background: rgba(250, 86, 82, 0.15);
+}
+
+.bgFirst {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 25px;
+}
+
+.bgSecond {
+    position: absolute;
+    margin-top: 690px;
+    margin-left: -70px;
 }

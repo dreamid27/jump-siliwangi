@@ -1,0 +1,41 @@
+.subscribeContainer {
+    text-align: center;
+    margin-bottom: 143px;
+}
+
+.subscribeContainer h1 {
+    margin: auto;
+    color: var(--greenColor);
+    width: 800px;
+    font-size: 64px;
+    line-height: 76px;
+    margin-bottom: 62px;
+}
+
+.formSubscribe {
+    margin: auto;
+    width: 780px;
+    height: 114px;
+    background-color: #FFF;
+    border-radius: 57px;
+    display: flex;
+    align-items: center;
+}
+
+.formSubscribe a {
+    margin-left: 41px;
+    font-size: 22px;
+    margin-right: 258px;
+    color: var(--paragraphColor);
+}
+
+.btnSubscribe {
+    font-size: 22px;
+    color: #FFF;
+    width: 209px;
+    height: 78px;
+    background-color: var(--actionColor);
+    border-radius: 157px;
+    outline: none;
+    border: none;
+}
