@@ -1,18 +1,18 @@
 import Link from 'next/link'
-import styles from './Navbar.module.scss'
+import styles from './Main.module.scss'
 
-function Navbar() {
+function MainContent() {
     return (
-        <section className="hero">
-        <div className="container">
-           <div className="text-wrapper">
-              <h1 className="text-title">Want anything to be easy with <b>LaslesVPN</b>.</h1>
-              <p className="description">Provide a network for all your needs with ease and fun using <b>LaslesVPN</b> discover interesting features from us.</p>
+        <section className={styles.hero}>
+        <div className={styles.container}>
+           <div className={styles.textWrapper}>
+              <h1 className={styles.textTitle}>Want anything to be easy with <b>LaslesVPN</b>.</h1>
+              <p className={styles.description}>Provide a network for all your needs with ease and fun using <b>LaslesVPN</b> discover interesting features from us.</p>
 
-              <Link href="/contact"><a className="cta">Get Started</a></Link>
+              <Link href="/contact"><a className={styles.cta}>Get Started</a></Link>
            </div>
 
-           <div className="image-wrapper">
+           <div className={styles.imageWrapper}>
               <img src="/Illustration-1.png" />
            </div>
         </div>
@@ -20,4 +20,4 @@ function Navbar() {
     );
 }
 
-export default Navbar; 
+export default MainContent; 
