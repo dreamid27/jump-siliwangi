@@ -33,14 +33,14 @@
     text-align: center;
 }
 
-.bg1 {
+.background {
     position: absolute;
     margin-top: -350px;
     margin-left: 100px;
 }
 
-.bg2 {
+.background2 {
     position: absolute;
     margin-top: -180px;
-    margin-left: 1800px;
+    margin-left: 1680px;
 }

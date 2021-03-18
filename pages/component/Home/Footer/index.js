@@ -4,10 +4,14 @@ import facebook from '@public/facebook.png';
 import youtube from '@public/youtube.png';
 import vimeo from '@public//vimeo.png';
 import twitter from '@public/twitter.png';
+import background from '@public/bgfooter1.png';
+import background2 from '@public/bgfooter2.png';
 
 function Footer(){
     return(
         <div className={styles.footerContainer}>
+            <div className={styles.background}><img src={background}></img></div>
+            <div className={styles.background2}><img src={background2}></img></div>
             <div className={styles.footerTop}>
                 <div className={styles.footerLogo}>
                     <img src={logo}></img>

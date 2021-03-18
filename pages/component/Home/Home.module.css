@@ -1,9 +1,18 @@
 .Container {
-    background-color: #E5E5E5;
-}
-.sectionMiddleContainer {
-
+    background-color: var(--backgroungColor);
 }
 
-.sectionFooter {
+@media screen and (min-width: 100px) {
+    .wrap {
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 1923px) {
+    .wrap {
+        overflow: visible;
+        transition: 0.5s;
+    }
 }

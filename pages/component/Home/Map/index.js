@@ -16,7 +16,7 @@ import zoomin from '@public/zoomin.png';
 import zoomout from '@public/zoomout.png';
 import uphorizontal from '@public/uphorizontal.png';
 import downhorizontal from '@public/downhorizontal.png';
-import linehorizontal2 from '@public/linehorizontal2.png'
+import linehorizontal2 from '@public/linehorizontal2.png';
 
 
 const liveReportList = [
@@ -93,8 +93,8 @@ function Map() {
                             <div><img src={next}></img></div>  
                         </div>
                     </div>
-                    {liveReportList.map((obj) => 
-                        <div className={styles.cardList}>    
+                    {liveReportList.map((obj, idx) => 
+                        <div key={idx} className={styles.cardList}>    
                             <div className={styles.flagImg}><img src={obj.flag}></img></div>
                             <h1>{obj.name}</h1>
                             <h2>{obj.total}</h2>

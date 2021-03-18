@@ -16,21 +16,21 @@ function Home() {
                 <NavBar />
             </div>
             <div className="wrapper">
-                <Header />
-                <Overview />
-                <div className={styles.sectionMiddleContainer}>
-                    <div className="wrapper">
-                    <Contagion />
-                    <Symptomps />
-                    <Treadment />
-                    <Map />
-                    </div>
+                <div className={styles.wrap}>
+                    <Header />
                 </div>
-                <div className={styles.sectionFooter}>
-                    <div className="wrapper">
-                        <Subscribe />
-                        <Footer />
-                    </div>
+                <div className={styles.wrap}>
+                    <Overview />
+                </div>
+                <Contagion />
+                <Symptomps />
+                <div className={styles.wrap}>
+                    <Treadment />
+                </div>
+                <Map />
+                <div className={styles.wrap}>
+                    <Subscribe />
+                    <Footer />
                 </div>
             </div>
         </div>

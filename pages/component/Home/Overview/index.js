@@ -1,7 +1,7 @@
 import styles from './Overview.module.css'
 import illustration from '@public/illustration2.png'
-import bg1 from '@public/bg.png'
-import bg2 from '@public/bg2.png'
+import bg1 from '@public/bgoverview1.png'
+import bg2 from '@public/bgoverview2.png'
 
 function Overview() {
     return(

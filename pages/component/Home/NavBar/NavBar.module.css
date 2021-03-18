@@ -13,9 +13,6 @@
     display: flex;
 }
 
-.navbarList {
-}
-
 .navbarList a[data-highlight="true"] {
     color: var(--actionColor);
 }
@@ -32,14 +29,14 @@
 
 .navbarList > a {
     margin: 0 20px;
-    color: #035755;
+    color: var(--greenHeaderColor);
 }
 
 .navbarContainer .contact {
     color: var(--actionColor);
     width: 154px;
     height: 55px;
-    background-color: #FFF;
+    background-color: var(--backgroungColor);
     border: 2px solid var(--actionColor) ;
     border-radius: 46px;
 }

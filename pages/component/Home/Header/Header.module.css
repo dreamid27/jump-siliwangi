@@ -33,7 +33,7 @@
 .btnDesc {
     margin-top: 54px;
     background: var(--actionColor);
-    color: #FFF;
+    color: var(--whiteColor);
     font-size: 24px;
     width: 250px;
     height: 80px;

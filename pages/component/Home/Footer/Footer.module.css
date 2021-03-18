@@ -1,3 +1,15 @@
+.background {
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 1600px;
+}
+
+.background2 {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 1715px;
+}
+
 .footerTop {
     display: flex;
     align-items: center;

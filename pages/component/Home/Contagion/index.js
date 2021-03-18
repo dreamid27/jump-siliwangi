@@ -2,7 +2,7 @@ import styles from './Contagion.module.css';
 import avatar from '@public/ava.png';
 import hand from '@public/hand.png';
 import cup from '@public/cup.png';
-import bg from '@public/bg.png';
+import bg from '@public/bgcontagion.png';
 
 const contagionList = [
     {
@@ -41,9 +41,8 @@ function Contagion() {
                 <div><img src={bg} className={styles.bgThird}></img></div>
             </div>
             <div className={styles.wrapContagion}>
-                {/* <div><img src="/bg.png" className={styles.bgThird}></img></div> */}
-                {contagionList.map(obj =>
-                    <div className={styles.cardContagion} data-highlight={obj.highlight}>
+                {contagionList.map((obj, idx) =>
+                    <div key={idx} className={styles.cardContagion} data-highlight={obj.highlight}>
                         <div className={styles.avaContagion}>
                             <img src={obj.avatar}></img>
                         </div>

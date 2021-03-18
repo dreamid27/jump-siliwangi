@@ -1,5 +1,19 @@
-.treadmentContainer {
+.backgound {
+    position: absolute;
+    margin-top: 640px;
+    margin-left: -135px;
+}
 
+.backgound2 {
+    position: absolute;
+    margin-top: 2250px;
+    margin-left: 1750px;
+}
+
+.backgound3 {
+    position: absolute;
+    margin-top: 2400px;
+    margin-left: 1760px;
 }
 
 .treadmentContainer span {
@@ -35,12 +49,12 @@
 }
 
 .treadmentContent:nth-child(odd) {
-
-}
-
-.treadmentContent:nth-child(even) {
     flex-direction: row-reverse;
 }
+
+/* .treadmentContent:nth-child(even) {
+    flex-direction: row-reverse;
+} */
 
 .descContent {
     display: flex;
@@ -49,6 +63,9 @@
 }
 
 .numberContent {
+    margin-top: -225px;
+    display: flex;
+    align-items: center;
     width: 75px;
     height: 75px;
     background: rgba(250,86,82, 0.15);
@@ -56,6 +73,7 @@
 }
 
 .numberContent .no {
+    width: 75px;
     text-align: center;
     font-size: 44px;
     color: var(--redHeaderColor);
@@ -86,3 +104,4 @@
 .imgContent {
     margin-right: 150px;
 }
+

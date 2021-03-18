@@ -1,8 +1,11 @@
-import styles from './Treadment.module.css'
-import wearmask from '@public/wearmask.png'
-import washhand from '@public/washhand.png'
-import usernose from '@public//usernose.png'
-import avoidcontacts from '@public/avoidcontacts.png'
+import styles from './Treadment.module.css';
+import wearmask from '@public/wearmask.png';
+import washhand from '@public/washhand.png';
+import usernose from '@public//usernose.png';
+import avoidcontacts from '@public/avoidcontacts.png';
+import backgound from '@public/bgwedo1.png';
+import backgound2 from '@public/bgwedo2.png';
+import backgound3 from '@public/bgwedo3.png';
 
 const treadmentList = [
     {
@@ -34,6 +37,9 @@ const treadmentList = [
 function Treadment() {
     return(
         <div className={styles.treadmentContainer}>
+            <div className={styles.backgound}><img src={backgound}></img></div>
+            <div className={styles.backgound2}><img src={backgound2}></img></div>
+            <div className={styles.backgound3}><img src={backgound3}></img></div>
             <h1>
                 <span>
                 Covid-19
@@ -44,8 +50,8 @@ function Treadment() {
                 Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused
             </p>
 
-            {treadmentList.map(obj => 
-                <div className={styles.treadmentContent}>
+            {treadmentList.map((obj, idx) => 
+                <div key={idx} className={styles.treadmentContent}>
                     <div className={styles.descContent}>
                         <div className={styles.numberContent}>
                             <div className={styles.no}>{obj.no}</div>

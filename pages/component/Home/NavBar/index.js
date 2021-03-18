@@ -31,8 +31,8 @@ function NavBar() {
                 <img src={Logo} ></img>
             </div>
             <div className={styles.navbarListWrap} >
-                {navbarList.map((obj) =>
-                    <div className={styles.navbarList}>
+                {navbarList.map((obj, idx) =>
+                    <div key={idx} className={styles.navbarList}>
                         <a href={obj.url} data-highlight={obj.highlight}> {obj.label} </a>
                         <div className={styles.dotNavbar} data-highlight={obj.highlight}></div>
                     </div>   

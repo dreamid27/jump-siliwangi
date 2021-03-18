@@ -12,7 +12,8 @@
 .reportWrap {
     width: 504px;
     height: 635px;
-    background-color: #FFF;
+    background-color: var(--whiteColor);
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
 }
 
 .headList {
@@ -40,6 +41,7 @@
     height: 49px;
     border-radius: 8px;
     align-items: center;
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
 }
 
 .navList img {
@@ -78,11 +80,13 @@
 }
 
 .mapNavigator {
-    background-color: #FFF;
+    background-color: var(--whiteColor);
     margin-right: 782px;
     width: 86px;
     height: 243px;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
 }
 
 .mapNavigatorTop img{
@@ -98,8 +102,9 @@
     width: 76px;
     height: 73px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: var(--whiteColor);
     text-align: center;
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.25);
 }
 
 .searchWrap img {

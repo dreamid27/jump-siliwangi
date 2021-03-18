@@ -32,6 +32,8 @@
 }
 
 .cardContagion {
+    background-color: var(--whiteColor);
+    z-index: 2;
     overflow: hidden;
     border-radius: 8px;
     padding-top: 65px;

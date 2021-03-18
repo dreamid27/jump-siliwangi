@@ -13,7 +13,8 @@ body {
   --greenHeaderColor: #035755;
   --redHeaderColor: #FA5652;
   --greenColor: #0C6C44;
-  --backgroungColor: linear-gradient(0deg, rgba(255,252,252,1) 0%, rgba(255,248,248,1) 60%, rgba(255,249,249,1) 100%);
+  --backgroungColor: #FFF8F8;
+  --whiteColor: #FFFFFF;
 }
 
 a {
@@ -30,5 +31,5 @@ a {
 .wrapper {
   width: 1922px;
   margin: auto;
-  /* padding: 0px 150px; */
+  background-color: #FFF8F8;
 }
