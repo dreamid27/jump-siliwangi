@@ -26,6 +26,7 @@
     font-size: 20px;
     line-height: 43px;
     color: var(--paragraphColor);
+    font-family: var(--gelionFont);
 }
 
 .btnDesc {
@@ -38,6 +39,7 @@
     border-radius: 65px;
     border: none;
     background: rgba(250, 86, 82, 0.15);
+    font-family: var(--gelionFont);
 }
 
 .bgFirst {

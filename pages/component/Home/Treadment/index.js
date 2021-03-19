@@ -53,10 +53,10 @@ function Treadment() {
             {treadmentList.map((obj, idx) => 
                 <div key={idx} className={styles.treadmentContent}>
                     <div className={styles.descContent}>
-                        <div className={styles.numberContent}>
-                            <div className={styles.no}>{obj.no}</div>
-                        </div>
                         <div className={styles.descWrap}>
+                            <div className={styles.numberContent}>
+                                <div className={styles.no}>{obj.no}</div>
+                            </div>
                             <div>
                                 <div className={styles.title}>{obj.title}</div>
                                 <div className={styles.desc}>{obj.desc}</div>

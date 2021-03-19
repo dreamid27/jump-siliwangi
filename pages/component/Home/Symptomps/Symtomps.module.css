@@ -27,6 +27,7 @@
     width: 716px;
     margin: auto;
     text-align: center;
+    font-family: var(--gelionFont);
 }
 
 .imgWrap {

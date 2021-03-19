@@ -39,6 +39,7 @@
     width: 650px;
     color: var(--paragraphColor);
     margin: auto;
+    font-family: var(--gelionFont);
 }
 
 .treadmentContent {
@@ -63,7 +64,7 @@
 }
 
 .numberContent {
-    margin-top: -225px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
     width: 75px;
@@ -84,6 +85,7 @@
 .descWrap {
     width: 532px;
     margin-left: 40px;
+    display: flex;
 }
 
 .descWrap .title {
@@ -92,6 +94,8 @@
     line-height: 69px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    font-family: var(--gelionFont);
+    font-weight: bold;
 }
 
 .descWrap .desc {
@@ -99,6 +103,7 @@
     font-size: 18px;
     line-height: 39px;
     text-transform: capitalize;
+    font-family: var(--gelionFont);
 }
 
 .imgContent {
