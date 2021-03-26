@@ -1,77 +1,76 @@
-
 .hero {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 158px;
+  margin-right: 150px;
 
-    .container {
-        display: flex;
-        align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+  }
 
+  .textWrapper {
+    width: 50%;
+
+    &.w-full {
+      width: 100%;
     }
 
-    .textWrapper {
-        width: 50%;
-        
-        &.w-full {
-            width: 100%;
-        }
-
-        .textTitle {
-            font-weight: 500;
-            font-size: 50px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            line-height: 70px;
-        }
-        .logoItem {
-            font-family: 700;
-        }
-        .description {
-            font-size : 16px;
-            line-height: 30px;
-            font-weight: 300;
-            color:#4F5665;
-            margin-bottom: 10px;
-        }
-
-        .cta {
-            font-size: 16px;
-            display: inline-block;
-            padding: 17.5px 77.5px;
-            margin-top: 50px;
-            background-color:#F53838;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: transform .3s;
-            position: relative;
-            
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            &::before{
-                content: '';
-                height: 80%;
-                width: 80%;
-                position: absolute;
-                top: 10%;
-                left: 10%;
-                display: inline-block;
-                background-color: inherit;
-                opacity: 0.55;
-                filter: blur(26px);
-                transform: translateY(45%);
-                z-index: -1;
-                border-radius: 10px;
-              }
-        }
+    .textTitle {
+      font-weight: 500;
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 70px;
+    }
+    .logoItem {
+      font-family: 700;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 300;
+      color: #4f5665;
+      margin-bottom: 10px;
     }
 
-    .imageWrapper {
-        width: 50%;
-        margin-left: 40px;
-        text-align: right;
-        
+    .cta {
+      font-size: 16px;
+      display: inline-block;
+      padding: 17.5px 77.5px;
+      margin-top: 50px;
+      background-color: #f53838;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &::before {
+        content: "";
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        display: inline-block;
+        background-color: inherit;
+        opacity: 0.55;
+        filter: blur(26px);
+        transform: translateY(45%);
+        z-index: -1;
+        border-radius: 10px;
+      }
     }
+  }
+
+  .imageWrapper {
+    width: 50%;
+    margin-left: 40px;
+    text-align: right;
+  }
 }

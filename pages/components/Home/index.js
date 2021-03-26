@@ -4,10 +4,10 @@ import Navbar from './NavbarMenu'
 import MainContent from './MainContent'
 import HighlightSection from './HighlightSection'
 import InformationSection from './InformationSection'
-import ChosePlan from './Chose.module.scss';
-import CustomerSection from './Customer.module.scss'
-import TestimonialSection from './Testimonial.module.scss'
-import FooterSection from './Footer.module.scss'
+// import ChosePlan from './ChosePlan'
+// import CustomerSection from './CustomerSection'
+// import TestimonialSection from './TestimonialSection'
+// import FooterSection from './FooterSection'
 import Icon from '@public/icon.svg'
 
 const Home = () => {
@@ -25,15 +25,15 @@ const Home = () => {
             <InformationSection />
             {/* <div classname={styles.sectionMiddleContainer}>
                 <div classname="wrapper">*/}
-                    <ChosePlan />
+                    {/* <ChosePlan />
                     <CustomerSection />
-                    <TestimonialSection />
+                    <TestimonialSection /> */}
                {/*} </div>
 
             </div>
             <div classname={styles.sectionFooter}>
             <div classname="wrapper">*/}
-                    <FooterSection />
+                    {/* <FooterSection /> */}
 {/*}                </div>
             </div> */}
         </div>
