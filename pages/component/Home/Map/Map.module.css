@@ -114,9 +114,8 @@
 }
 
 .countryWrap {
-    background-color: burlywood;
     height: 456px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .navPrev {

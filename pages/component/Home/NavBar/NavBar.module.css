@@ -13,14 +13,32 @@
     display: flex;
 }
 
-.navbarList a[data-highlight="true"] {
+/* .navbarList a[data-highlight="true"] {
     color: var(--actionColor);
-}
+} */
 
-.dotNavbar[data-highlight="true"] {
+/* .navbarList a:hover {
+    color: var(--actionColor);
+} */
+
+/* .dotNavbar[data-highlight="true"] {
     margin-top: 9px;
     margin-left: auto;
     margin-right: auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--actionColor);
+} */
+
+.navbarList a:hover {
+    color: var(--actionColor);
+}
+.navbarList a:hover::before{
+    content: "";
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 35px;
     width: 6px;
     height: 6px;
     border-radius: 50%;

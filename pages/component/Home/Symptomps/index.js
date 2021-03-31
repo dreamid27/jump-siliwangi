@@ -5,7 +5,7 @@ import background2 from '@public/symbg2.png'
 
 function Symtomps() {
     return(
-        <div className={styles.symtompsContainer}>
+        <div className={styles.symtompsContainer} id="Symptoms">
             <div>
                 <h1>
                     <span>

@@ -4,29 +4,29 @@ import Logo from '@public/logo.png';
 const navbarList = [
     {
         label: 'Overview',
-        url: '/overview',
-        highlight: true
+        url: '#Navbar',
+        // highlight: true
     },
     {
         label: 'Contagion',
-        url: '/contagion',
-        highlight: false
+        url: '#Contagion',
+        // highlight: false
     },
     {
         label: 'Symptoms',
-        url: '/symptoms',
-        highlight: false
+        url: '#Symptoms',
+        // highlight: false
     },
     {
         label: 'Prevention',
-        url: '/prevention',
-        highlight: false
+        url: '#Prevention',
+        // highlight: false
     },
 ]
 
 function NavBar() {
     return(
-        <div className={styles.navbarContainer}>
+        <div className={styles.navbarContainer} id="Navbar">
             <div>
                 <img src={Logo} ></img>
             </div>
@@ -34,7 +34,7 @@ function NavBar() {
                 {navbarList.map((obj, idx) =>
                     <div key={idx} className={styles.navbarList}>
                         <a href={obj.url} data-highlight={obj.highlight}> {obj.label} </a>
-                        <div className={styles.dotNavbar} data-highlight={obj.highlight}></div>
+                        {/* <div className={styles.dotNavbar} data-highlight={obj.highlight}></div> */}
                     </div>   
                 )}
             </div>

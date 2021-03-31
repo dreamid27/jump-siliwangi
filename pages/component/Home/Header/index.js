@@ -3,7 +3,7 @@ import illustration from '@public/illustration1.png'
 
 function Header() {
     return (
-        <div className={styles.headerContainer}>
+        <div className={styles.headerContainer} id="Header">
             <div className={styles.headerDesc}>
                 <h1>
                     <span>COVID-19 Alert</span>Stay At Home Quarantine To Stop Corona Virus

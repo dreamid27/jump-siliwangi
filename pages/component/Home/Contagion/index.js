@@ -27,7 +27,7 @@ const contagionList = [
 
 function Contagion() {
     return(
-        <div className={styles.contagionContainer}>
+        <div className={styles.contagionContainer} id="Contagion">
             <div>
                 <h1>
                     <span>

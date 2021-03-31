@@ -36,7 +36,7 @@ const treadmentList = [
 
 function Treadment() {
     return(
-        <div className={styles.treadmentContainer}>
+        <div className={styles.treadmentContainer} id="Prevention">
             <div className={styles.backgound}><img src={backgound}></img></div>
             <div className={styles.backgound2}><img src={backgound2}></img></div>
             <div className={styles.backgound3}><img src={backgound3}></img></div>

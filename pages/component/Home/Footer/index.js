@@ -18,17 +18,17 @@ function Footer(){
                 </div>
                 <div className={styles.footerList}>
                     <ul>
-                        <li>Overview</li>
-                        <li>Symptoms</li>
-                        <li>Prevention</li>
-                        <li>Treadment</li>
+                        <li><a href="#Navbar">Overview</a></li>
+                        <li><a href="#Symptoms">Symptoms</a></li>
+                        <li><a href="#Prevention">Prevention</a></li>
+                        <li><a href="#Prevention">Treadment</a></li>
                     </ul>
                 </div>
                 <div className={styles.footerImg}>
-                    <img src={facebook}></img>
-                    <img src={youtube}></img>
-                    <img src={vimeo}></img>
-                    <img src={twitter}></img>
+                    <a href="https://facebook.com/"><img src={facebook}></img></a>
+                    <a href="https://www.youtube.com/"><img src={youtube}></img></a>
+                    <a href="https://vimeo.com/"><img src={vimeo}></img></a>
+                    <a href="https://twitter.com"><img src={twitter}></img></a>
                 </div>
             </div>
             <div className={styles.footerBottom}>

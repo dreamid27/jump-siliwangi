@@ -5,7 +5,7 @@ import bg2 from '@public/bgoverview2.png'
 
 function Overview() {
     return(
-        <div className={styles.overviewContainer}>
+        <div className={styles.overviewContainer} id="Overview">
             <div className={styles.overviewImg}>
                 <img src={illustration}></img>
             </div>
