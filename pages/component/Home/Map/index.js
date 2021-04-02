@@ -7,59 +7,65 @@ import line from '@public/line.png';
 import next from '@public/next.png';
 import up from '@public/up.png';
 import down from '@public/down.png';
-import usa from '@public/usa.png';
-import italy from '@public/italy.png';
-import china from '@public/china.png';
-import spain from '@public/spain.png';
-import germany from '@public/germany.png';
-import iran from '@public/iran.png';
 import search from '@public/search.png';
 import zoomin from '@public/zoomin.png';
 import zoomout from '@public/zoomout.png';
 import uphorizontal from '@public/uphorizontal.png';
 import downhorizontal from '@public/downhorizontal.png';
 import linehorizontal2 from '@public/linehorizontal2.png';
-import Servivce from './service';
+import getCountries from './service';
 
 function Map() {
-    const [countries, setCountries] = useState([]);
-    const [count, setCount] = useState(1);
+    // const [countries, setCountries] = useState([]);
+    const [page, setPage] = useState(1);
 
-    const Url = 'https://6056df7a055dbd0017e84408.mockapi.io/country';
+    // const Url = 'https://6056df7a055dbd0017e84408.mockapi.io/country?page='+page+'&limit=6';
+    // const Url = 'https://6056df7a055dbd0017e84408.mockapi.io/country';
+    const urlParams = '?page='+page+'&limit=6';
+
+    const countries = getCountries(urlParams, page);
+    const limit = 1;
 
     const handleIncrement = () => {
-        setCount(count+1);
-        console.log();
+        // setCount(count+1);
+        if ( (countries.length) < 6 || (countries.length) === 0 ) {
+            console.log('Mentok bosku'); 
+            return setPage(limit);
+        }else{
+            console.log('Lanjut');
+            return setPage(page + 1 );
+        }
     };
     
     const handleDecrement = () => {
-        if ( count <= 1 ) {
+        if ( page <= 1 ) {
             console.log('Mentok bosku'); 
-            return setCount(count);
+            return setPage(page);
         }else{
-            return setCount(count - 1 );
+            return setPage(page - 1 );
         }
     };
+    
+    // const getCountries = async () => {
+    //     try{
+    //         const res = await axios.get(Url+'?page='+count+'&limit=6');
+    //         const limit = res.data.length;
+    //         console.log(res.data);
+    //         console.log(limit);
+    //         // console.log(res.data.length);
+    //         console.log(res.status);
+    //         setCountries(res.data);
+    //         return setCountries;
+    //     } catch(err){
+    //         console.log(err.message);
+    //         console.log(err.status);
+    //     }
+    // }
 
-    const getCountries = async () => {
-        try{
-            const res = await axios.get(Url+'?page='+count+'&limit=6');
-            const countComment = res.data.length;
-            console.log(res.data);
-            // console.log(countComment);
-            console.log(res.data.length);
-            console.log(res.status);
-            setCountries(res.data);
-            
-        } catch(err){
-            console.log(err.message);
-            console.log(err.status);
-        }
-    }
+    // useEffect(() => {
+    //     getCountries();
 
-    useEffect(() => {
-        getCountries();
-    }, [count]);
+    // }, [page]);
 
     return (
         <div className={styles.mapContainer}>
@@ -88,7 +94,7 @@ function Map() {
                     <div className={styles.headList}>
                         <div>
                             <h1>Live Reports</h1>
-                            <h5>Count is {count}</h5>
+                            <h5>Page : {page}</h5>
                         </div>
                         <div className={styles.navList}>
                             <div onClick={handleDecrement} className={styles.navPrev}><img src={prev}></img></div>

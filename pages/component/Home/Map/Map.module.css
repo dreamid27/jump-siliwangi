@@ -51,7 +51,7 @@
 .cardList {
     display: flex;
     align-items: center;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
 }
 
 .flagImg img{
@@ -111,11 +111,6 @@
 
 .searchWrap img {
     margin-top: 22px;
-}
-
-.countryWrap {
-    height: 456px;
-    /* overflow: scroll; */
 }
 
 .navPrev {
