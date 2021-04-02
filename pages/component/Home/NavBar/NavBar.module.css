@@ -53,6 +53,8 @@
 }
 
 .navbarContainer .contact {
+    outline: none;
+    cursor: pointer;
     color: var(--actionColor);
     width: 154px;
     height: 55px;
@@ -61,4 +63,8 @@
     border-radius: 46px;
     font-family: var(--gelionFont);
     font-size: 18px;
+}
+
+.contact:active {
+    box-shadow: 10px 10px 80px 0px rgba(0,0,0,0.2);
 }
