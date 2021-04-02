@@ -30,7 +30,7 @@ function Map() {
         // setCount(count+1);
         if ( (countries.length) < 6 || (countries.length) === 0 ) {
             console.log('Mentok bosku'); 
-            return setPage(limit);
+            return setPage(page);
         }else{
             console.log('Lanjut');
             return setPage(page + 1 );
