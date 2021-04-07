@@ -25,10 +25,10 @@ function Footer(){
                     </ul>
                 </div>
                 <div className={styles.footerImg}>
-                    <a href="https://facebook.com/"><img src={facebook}></img></a>
-                    <a href="https://www.youtube.com/"><img src={youtube}></img></a>
-                    <a href="https://vimeo.com/"><img src={vimeo}></img></a>
-                    <a href="https://twitter.com"><img src={twitter}></img></a>
+                    <a href="https://facebook.com/" target="_blank"><img src={facebook}></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src={youtube}></img></a>
+                    <a href="https://vimeo.com/" target="_blank"><img src={vimeo}></img></a>
+                    <a href="https://twitter.com" target="_blank"><img src={twitter}></img></a>
                 </div>
             </div>
             <div className={styles.footerBottom}>
