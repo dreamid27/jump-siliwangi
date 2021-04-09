@@ -1,79 +1,78 @@
 .hero {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 158px;
-    margin-right: 150px;
-  
-    .container {
-      display: flex;
-      align-items: center;
-    }
-.cardWrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 158px;
+  margin-right: 150px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .cardWrapper {
+    justify-content: space-evenly;
     display: flex;
     width: 1140px;
     height: 200px;
     border-radius: 10px;
     margin-left: -10px;
     margin-right: -10px;
-    -webkit-box-shadow: 0 1.5625rem 2.8125rem rgba(79,86,101,0.075) !important;
-    box-shadow: 0 1.5625rem 2.8125rem rgba(79,86,101,0.075) !important;
+    -webkit-box-shadow: 0 1.5625rem 2.8125rem rgba(79, 86, 101, 0.075) !important;
+    box-shadow: 0 1.5625rem 2.8125rem rgba(79, 86, 101, 0.075) !important;
 
-    .cardItem {
-        display: flex;
-        width: 50%;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
+    .line {
+      border-left: 2px solid #eeeff2;
+      height: 125.57px;
+      margin-top: 35px;
+    }
+    .column {
+      display: flex;
+      padding-top: 70px;
 
-        .cardImage {
-            width: 55px;
-            max-width: 100%;
+      .dataItem {
+        padding-left: 36px;
+        margin-top: -18px;
 
-        }
-
-        .cardName {
-            padding-top: 20px;
+        h3 {
+            font-weight: bold;
             font-size: 25px;
-            font-weight: 700;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-transform: capitalize;
+            line-height: 5px;
+            color: #0B132A;
         }
 
-        .cardCategory {
-            color:#4F5665;
+        p {
+            font-weight: normal;
             font-size: 20px;
-            font-weight: 400;
-
+            color: #4F5665;
         }
+      }
     }
-}
+    .cardItem {
+      display: flex;
+      width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
 
-.textWrapperFeatures {
-    padding-left: 169px;
-    padding-right: 50px;
-    
-    
+      .cardImage {
+        width: 55px;
+        max-width: 100%;
+      }
 
-    .textTitleFeatures {
-        font-size: 35px;
-        font-weight: 500;
-        line-height: 50px;
-    }
+      .cardName {
+        padding-top: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
 
-    .descriptionFeatures {
-        font-size: 16px;
+      .cardCategory {
+        color: #4f5665;
+        font-size: 20px;
         font-weight: 400;
-        color: #4F5665;
-        line-height: 30px;
+      }
     }
-
-    .listFeatures {
-        list-style: none;
-        font-size: 16px;
-        font-weight: 400;
-        color: #4F5665;
-        
-    }
-}
+  }
 }

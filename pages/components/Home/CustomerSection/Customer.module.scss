@@ -1,0 +1,61 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 158px;
+    margin-right: 150px;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .network {
+        text-align: center;
+        justify-content: center;
+
+        .networkTitle {
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .networkDescription {
+            color: #4f5665;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 0 250px 0 250px;
+            padding-bottom: 155px;
+        }
+        .imageNetwork {
+            width: 1060px;
+            height: 537.77px;
+        }
+    }
+
+    .sponsor {
+        display: flex;
+        justify-content: center;
+        
+        .netflix {
+            height: 100px;
+            margin-top: 50px;
+            padding-right: 30px;
+        }
+        .reddit {
+            height: 50px;
+            margin-top: 75px;
+        }
+        .amazon {
+            height: 208.32px;   
+        }
+        .discord {
+            height: 60px;
+            margin-top: 75px;
+            padding-right: 30px;
+        }
+        .spotify {
+            height: 50px;
+            margin-top: 80px;
+        }
+    }
+}

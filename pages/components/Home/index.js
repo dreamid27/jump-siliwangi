@@ -4,18 +4,18 @@ import Navbar from './NavbarMenu'
 import MainContent from './MainContent'
 import HighlightSection from './HighlightSection'
 import InformationSection from './InformationSection'
-// import ChosePlan from './ChosePlan'
-// import CustomerSection from './CustomerSection'
-// import TestimonialSection from './TestimonialSection'
-// import FooterSection from './FooterSection'
-import Icon from '@public/icon.svg'
+import ChosePlan from './ChosePlan'
+import CustomerSection from './CustomerSection'
+import TestimonialSection from './TestimonialSection'
+import FooterSection from './FooterSection'
+// import Icon from '@public/icon.svg'
 
 const Home = () => {
     return <div>
         <div>
             <Head>
             <title>LaslesVPN</title>
-            <link rel={Icon} alt="icon" />
+            <link rel="icon" href="/icon.svg" alt="icon" />
             </Head>
             <Navbar />
         </div>
@@ -23,19 +23,10 @@ const Home = () => {
             <MainContent />
             <HighlightSection />
             <InformationSection />
-            {/* <div classname={styles.sectionMiddleContainer}>
-                <div classname="wrapper">*/}
-                    {/* <ChosePlan />
+                    <ChosePlan />
                     <CustomerSection />
-                    <TestimonialSection /> */}
-               {/*} </div>
-
-            </div>
-            <div classname={styles.sectionFooter}>
-            <div classname="wrapper">*/}
-                    {/* <FooterSection /> */}
-{/*}                </div>
-            </div> */}
+                    <TestimonialSection />
+                    <FooterSection />
         </div>
     </div>
 }

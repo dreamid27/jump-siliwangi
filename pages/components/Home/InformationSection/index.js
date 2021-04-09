@@ -10,26 +10,26 @@ function Information() {
            </div>
 
            <div className={styles.textWrapperFeatures}>
-              <h1 className={styles.textTitleFeatures}>We Provide Many Features You Can Use</h1>
-              <p className={styles.descriptionFeatures}>You can explore the features that we provide with fun and have their own functions each feature.</p>
-           <div className={styles.listFeatures}>
+              <h3>We Provide Many Features You Can Use</h3>
+              <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
+           <ul className={styles.listFeatures}>
                  <li>
-                    <img className={styles.imageFeatures} src="/check-circle.svg" />
-                    <p className={styles.descListFeatures}>Powerfull online protection.</p>
+                    <img className={styles.imageFeatures} src="/checkmark.svg" />
+                    Powerfull online protection.
                  </li>
                  <li>
-                    <img className={styles.imageFeatures} src="/check-circle.svg" />
-                    <p className={styles.descListFeatures}>Internet without borders..</p>
+                    <img className={styles.imageFeatures} src="/checkmark.svg" />
+                    Internet without borders.
                  </li>
                  <li>
-                    <img className={styles.imageFeatures} src="/check-circle.svg" />
-                    <p className={styles.descListFeatures}>Supercharged VPN.</p>
+                    <img className={styles.imageFeatures} src="/checkmark.svg" />
+                    Supercharged VPN.
                  </li>
                  <li>
-                    <img className={styles.imageFeatures} src="/check-circle.svg" />
-                    <p className={styles.descListFeatures}>No specific time limits.</p>
+                    <img className={styles.imageFeatures} src="/checkmark.svg" />
+                    No specific time limits.
                  </li>
-              </div>
+              </ul>
            </div>
         </div>
      </section>

@@ -1,0 +1,103 @@
+.footer {
+    height : 563.12px;
+    width: 100%;
+    background:  #F8F8F8;
+    display: block;
+
+    .innerFooter {
+        width: 95%;
+        margin: auto;
+        padding: 30px 10px;
+        padding-top: 186px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: center;
+
+        .footerItems {
+            width: 30%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #000;
+
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+                color: #4F5665;
+            }
+
+            .footerItems h1 {
+                color: #000;
+            }
+
+            .border1 {
+                height: 3px;
+                width: 40px;
+                background: #ff9800;
+                color: #ff9800;
+                background-color: #ff9800;
+                border: 0px;
+            }
+
+            ul {
+                list-style: none;
+                color: #000;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+            }
+
+            ul a {
+                text-decoration: none;
+                outline: none;
+                color: #000;
+                transition: 0.3s;
+            }
+
+            ul a:hover {
+                color: #ff9800;
+            }
+
+            ul li {
+                margin: 10px 0;
+                height: 25px;
+            }
+
+            li i {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .socialMedia {
+        width: 100%;
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .socialMedia a {
+        text-decoration: none;
+    }
+
+    .socialMedia i {
+        height: 25px;
+        width: 25px;
+        margin: 20px 10px;
+        padding: 4px;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .socialMedia i:hover {
+        transform: scale(1.5);
+    }
+
+    .footerBottom {
+        padding: 10px;
+        background: #00121b;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+    }
+}

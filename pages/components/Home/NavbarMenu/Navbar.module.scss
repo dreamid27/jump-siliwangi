@@ -1,55 +1,54 @@
-.NavContainer {
+.container {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 158px;
+  margin-right: 150px;
+
+  img {
+    width: 150px;
+    height: 40px;
+    margin-top: 7px;
+  }
+
+  .navLinks {
     display: flex;
-    margin-top: 45px;
-    margin-left: 158px;
-    margin-right: 150px;
+    font-size: 16px;
+    margin-left: auto;
+    list-style: none;
+    font-weight: 300;
+    line-height: 19px;
+    color: #4f5665;
 
-    img {
-        width: 150px;
-        height: 40px;
-        margin-top: 7px;
+    a[href] {
+      position: relative;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 500;
+        transition: 0.5s;
+      }
     }
 
-    .NavLinks {
-        display: flex;
-        font-size: 16px;
-        margin-left: auto;
-        list-style: none;
-        font-weight: 300;
-        
-        .SigninItem {
-            color: #000;
-            font-weight: 500;
-            
-        }
-
-        .SignupItem {
-            font-weight: 500;
-            padding: 13px 45px;
-            border: 1px solid #F53855;
-            color: #F53855;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: transform .3s;
-
-            &:hover {
-                background-color: #F53855;
-                color: #fff;
-            }
-            
-        }
-
-        a[href] {
-            position: relative;
-            margin-left: 20px;
-            margin-right: 20px;
-            text-decoration: none;
-            
-           
-            &:hover {
-                font-weight: 500;
-                transition: .5s;
-            }
-        }
+    .signInItem {
+      color: #000;
+      font-weight: 500;
     }
-} 
+
+    .signUpItem {
+      font-weight: 500;
+      padding: 13px 45px;
+      border: 1px solid #f53855;
+      color: #f53855;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: transform 0.3s;
+
+      &:hover {
+        background-color: #f53855;
+        color: #fff;
+      }
+    }
+  }
+}

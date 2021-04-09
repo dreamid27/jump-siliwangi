@@ -1,0 +1,157 @@
+.hero {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #f6f6f6;
+  
+
+    .container {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+}
+
+.pricing {
+  text-align: center;
+  justify-content: center;
+
+  .pricingTitle {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .pricingDescription {
+    color: #4f5665;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+.wrapperCard {
+  display: flex;
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    height: 760px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+    flex: 1;
+    margin: 25px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+
+    .cards {
+
+    }
+    &:hover {
+      border: 2px solid #f53838;
+    }
+
+    &.popular {
+      margin-top: -10px;
+      margin-bottom: -10px;
+
+      .cardPrice {
+        margin: 50px;
+
+        h1 {
+          color: #3498db;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+
+  .cardTitle {
+    padding-top: 79px;
+
+    .imagePricing {
+      margin-top: -30px;
+    }
+
+    h3 {
+      padding-top: 10px;
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    h4 {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .cardDescription {
+    padding-left: 18px;
+    ul {
+      list-style: none;
+      margin: 30px 0;
+      padding: 0;
+      text-align: left;
+    }
+    
+    li {
+      display: flex;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 40px;
+      color: #4F5665;
+    }
+    .descListPricing {
+      display: flex;
+      color: #4f5665;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    img {
+      margin-right: 26px;
+    }
+  }
+
+  .cardAction {
+    button {
+      background: transparent;
+      border: 2px solid #f53838;
+      border-radius: 50px;
+      color: #f53838;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      width: 177.88px;
+      height: 45px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #f53838;
+        color: #fff;
+      }
+
+      &::before {
+        content: "";
+        height: 5%;
+        width: 40%;
+        position: absolute;
+        top: 92%;
+        left: 30%;
+        display: inline-block;
+        background-color: inherit;
+        opacity: 0.55;
+        filter: blur(26px);
+        transform: translateY(45%);
+        z-index: 1;
+        border-radius: 10px;
+      }
+    }
+  }
+}
