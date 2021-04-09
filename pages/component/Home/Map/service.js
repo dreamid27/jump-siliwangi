@@ -9,8 +9,8 @@ const getCountries = (urlParams, page) => {
     useEffect(async() => {
         try{
             const res = await axios.get(urlApi+urlParams);
-            console.log(res.data);
-            console.log(res.status);
+            // console.log(res.data);
+            // console.log(res.status);
             setCountries(res.data);
         } catch(err){
             console.log(err.message);
@@ -20,4 +20,24 @@ const getCountries = (urlParams, page) => {
     return countries;
 }
 
-export default getCountries;
+const getLimit = () => {
+    const [limit, setLimit] = useState([]);
+
+    useEffect(async() => {
+        try{
+            const res = await axios.get(urlApi);
+            // console.log(res.data);
+            // console.log(res.status);
+            setLimit(res.data);
+        } catch(err){
+            console.log(err.message);
+            console.log(err.status);
+        }
+    }, [])
+    return limit;
+}
+
+export default { 
+    getCountries, 
+    getLimit 
+};

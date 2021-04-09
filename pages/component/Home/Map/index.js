@@ -13,59 +13,33 @@ import zoomout from '@public/zoomout.png';
 import uphorizontal from '@public/uphorizontal.png';
 import downhorizontal from '@public/downhorizontal.png';
 import linehorizontal2 from '@public/linehorizontal2.png';
-import getCountries from './service';
+import service from './service';
 
 function Map() {
-    // const [countries, setCountries] = useState([]);
     const [page, setPage] = useState(1);
 
-    // const Url = 'https://6056df7a055dbd0017e84408.mockapi.io/country?page='+page+'&limit=6';
-    // const Url = 'https://6056df7a055dbd0017e84408.mockapi.io/country';
     const urlParams = '?page='+page+'&limit=6';
 
-    const countries = getCountries(urlParams, page);
-    const limit = 1;
+    const countries = service.getCountries(urlParams, page);
+    const limit = service.getLimit();
 
-    const handleIncrement = () => {
-        // setCount(count+1);
-        if ( (countries.length) < 6 || (countries.length) === 0 ) {
-            console.log('Mentok bosku'); 
+    const handleNext = () => {
+        if ( countries.length === (limit.length) % 6) {
+            console.log('Last Page');  
             return setPage(page);
         }else{
-            console.log('Lanjut');
             return setPage(page + 1 );
         }
     };
     
-    const handleDecrement = () => {
+    const handlePrev = () => {
         if ( page <= 1 ) {
-            console.log('Mentok bosku'); 
+            console.log('First Page'); 
             return setPage(page);
         }else{
             return setPage(page - 1 );
         }
     };
-    
-    // const getCountries = async () => {
-    //     try{
-    //         const res = await axios.get(Url+'?page='+count+'&limit=6');
-    //         const limit = res.data.length;
-    //         console.log(res.data);
-    //         console.log(limit);
-    //         // console.log(res.data.length);
-    //         console.log(res.status);
-    //         setCountries(res.data);
-    //         return setCountries;
-    //     } catch(err){
-    //         console.log(err.message);
-    //         console.log(err.status);
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     getCountries();
-
-    // }, [page]);
 
     return (
         <div className={styles.mapContainer}>
@@ -94,12 +68,11 @@ function Map() {
                     <div className={styles.headList}>
                         <div>
                             <h1>Live Reports</h1>
-                            <h5>Page : {page}</h5>
                         </div>
                         <div className={styles.navList}>
-                            <div onClick={handleDecrement} className={styles.navPrev}><img src={prev}></img></div>
+                            <div onClick={handlePrev} className={styles.navPrev}><img src={prev}></img></div>
                             <div className={styles.navLine}><img src={line}></img></div>
-                            <div onClick={handleIncrement} className={styles.navNext}><img src={next}></img></div>
+                            <div onClick={handleNext} className={styles.navNext}><img src={next}></img></div>
                         </div>
                     </div>
                     <div className={styles.countryWrap}>
