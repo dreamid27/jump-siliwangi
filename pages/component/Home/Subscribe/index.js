@@ -1,6 +1,6 @@
 import styles from './Subscribe.module.css';
 // import useSubscribe from './service';
-import useSubscribe from '../../../Service/postSubscribe';
+import useSubscribe from 'service/postSubscribe';
 
 
 function Subscribe() {
