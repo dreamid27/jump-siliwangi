@@ -1,6 +1,4 @@
 import styles from './Subscribe.module.css';
-import axios from "axios";
-import { useState, useEffect } from 'react';
 import useSubscribe from './service';
 
 function Subscribe() {
