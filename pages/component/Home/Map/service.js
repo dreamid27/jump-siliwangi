@@ -45,7 +45,7 @@ const useGetLimit = () => {
     return limit;
 }
 
-export default { 
+export { 
     useGetCountries, 
     useGetLimit 
 }
