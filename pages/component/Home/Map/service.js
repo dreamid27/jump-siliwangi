@@ -12,7 +12,6 @@ const useGetCountries = (urlParams, page) => {
             setIsLoading(true);
             const res = await axios.get(urlApi+urlParams);
             console.log(res.data);
-            // console.log(res.status);
             setCountries(res.data);
         } catch(err){
             console.log(err.message);
