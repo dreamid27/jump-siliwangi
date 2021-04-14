@@ -24,7 +24,7 @@ const useGetCountries = (urlParams, page) => {
     return {countries, isLoading};
 }
 
-export const useGetLimit = () => {
+const useGetLimit = () => {
     const [limit, setLimit] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -45,4 +45,4 @@ export const useGetLimit = () => {
     return limit;
 }
 
-export default useGetCountries; 
+export default {useGetCountries, useGetLimit} ; 
