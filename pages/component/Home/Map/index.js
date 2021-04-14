@@ -12,13 +12,14 @@ import zoomout from '@public/zoomout.png';
 import uphorizontal from '@public/uphorizontal.png';
 import downhorizontal from '@public/downhorizontal.png';
 import linehorizontal2 from '@public/linehorizontal2.png';
-import {useGetCountries, useGetLimit } from './service';
+import Service from './service';
 
 function Map() {
     const [page, setPage] = useState(1);
 
     const urlParams = '?page=' + page + '&limit=6';
 
+    const {useGetCountries, useGetLimit } = Service;
     const { countries, isLoading } = useGetCountries(urlParams, page);
     const limit = useGetLimit();
 
