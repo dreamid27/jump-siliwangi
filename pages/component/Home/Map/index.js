@@ -12,7 +12,8 @@ import zoomout from '@public/zoomout.png';
 import uphorizontal from '@public/uphorizontal.png';
 import downhorizontal from '@public/downhorizontal.png';
 import linehorizontal2 from '@public/linehorizontal2.png';
-import Service from './service';
+// import Service from './service';
+import Service from '../../../Service/getCountries';
 
 function Map() {
     const [page, setPage] = useState(1);
