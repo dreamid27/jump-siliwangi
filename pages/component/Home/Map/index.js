@@ -20,15 +20,22 @@ function Map() {
 
     const urlParams = '?page='+page+'&limit=6';
 
-    const countries = service.getCountries(urlParams, page);
+    // const { countries, limit, isLoading } = useCountries();
+
+    const {countries, isLoading} = service.getCountries(urlParams, page);
     const limit = service.getLimit();
 
     const handleNext = () => {
-        if ( countries.length === (limit.length) % 6) {
-            console.log('Last Page');  
-            return setPage(page);
-        }else{
-            return setPage(page + 1 );
+        if (isLoading) {
+            console.log('Loading');
+            return;
+        } else {
+            if ( countries.length === (limit.length) % 6) {
+                console.log('Last Page');  
+                return setPage(page);
+            }else{
+                return setPage(page + 1 );
+            }
         }
     };
     
@@ -75,7 +82,8 @@ function Map() {
                             <div onClick={handleNext} className={styles.navNext}><img src={next}></img></div>
                         </div>
                     </div>
-                    <div className={styles.countryWrap}>
+                    {isLoading ? <div className={styles.loader}></div> : 
+                    <div className={styles.countryWrap}> 
                         {countries.map((country, idx) => (
                             <div key={idx} className={styles.cardList}>
                                 <div className={styles.flagImg}><img src={country.flag}></img></div>
@@ -85,6 +93,7 @@ function Map() {
                             </div>
                         ))}
                     </div>
+                    }
                 </div>
             </div>
         </div>
