@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 const urlApi = 'https://6056df7a055dbd0017e84408.mockapi.io/country';
 
-const useGetCountries = (urlParams, page) => {
+export const useGetCountries = (urlParams, page) => {
     const [countries, setCountries] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -24,7 +24,7 @@ const useGetCountries = (urlParams, page) => {
     return {countries, isLoading};
 }
 
-const useGetLimit = () => {
+export const useGetLimit = () => {
     const [limit, setLimit] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -45,7 +45,7 @@ const useGetLimit = () => {
     return limit;
 }
 
-export { 
-    useGetCountries, 
-    useGetLimit 
-}
+// export { 
+//     useGetCountries, 
+//     useGetLimit 
+// }
