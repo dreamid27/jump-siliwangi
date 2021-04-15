@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import { useState } from 'react'
 import styles from './Home.module.css'
 import NavBar from './NavBar';
 import About from './About';
@@ -8,7 +6,6 @@ import Features from './Features'
 import Pricing from './Pricing'
 import Sponsor from './Sponsor'
 import Testimonials from './Testimonials'
-import Subscribe from './Subscribe'
 import Footer from './Footer'
 
 function Home() {
@@ -25,7 +22,6 @@ function Home() {
           <div className="wrapper">
             <Pricing />
             <Sponsor />
-            {/* <Testimonials /> */}
           </div>
           <Testimonials />
         </div>
