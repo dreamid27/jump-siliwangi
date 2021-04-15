@@ -13,7 +13,7 @@ function About() {
         <button className={styles.btn} type="button"> Get Started </button>
       </div>
       <div className={styles.aboutRight}>
-        <img src="/Illustration1.png" alt="Illustration1"></img>
+        <img src="/illustration1.png" alt="Illustration1"></img>
       </div>
     </div>
   );

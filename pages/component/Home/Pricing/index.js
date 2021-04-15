@@ -11,7 +11,7 @@ function Pricing() {
             </p>
             <div className={styles.pricing}>
                 <div className={styles.pricingWrap}>
-                    <img src="/Free.png"></img>
+                    <img src="/free.png"></img>
                     <h1>Free Plan</h1>
                     <div className={styles.pricingDetail}>
                         <div className={styles.pricingImg}>
@@ -31,7 +31,7 @@ function Pricing() {
                     <button type="button">Select</button>
                 </div>
                 <div className={styles.pricingWrap}>
-                    <img src="/Free.png"></img>
+                    <img src="/free.png"></img>
                     <h1>Standard Plan</h1>
                     <div className={styles.pricingDetail}>
                         <div className={styles.pricingImg}>
@@ -53,7 +53,7 @@ function Pricing() {
                     <button type="button">Select</button>
                 </div>
                 <div className={styles.pricingWrap}>
-                    <img src="/Free.png"></img>
+                    <img src="/free.png"></img>
                     <h1>Premium Plan</h1>
                     <div className={styles.pricingDetail}>
                         <div className={styles.pricingImg}>

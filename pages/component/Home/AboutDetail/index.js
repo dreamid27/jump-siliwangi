@@ -23,7 +23,7 @@ function AboutDetail() {
       </div>
       <div className={styles.servers}>
         <div>
-          <img src="/Server.png"></img>
+          <img src="/server.png"></img>
         </div>
         <div>
           <h1>50+</h1>

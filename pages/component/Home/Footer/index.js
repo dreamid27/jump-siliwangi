@@ -18,7 +18,7 @@ function Footer() {
       </div>
       <div className={styles.footer}>
         <div className={styles.footerAbout}>
-          <img src="/Logo.png"></img>
+          <img src="/logo.png"></img>
           <h1>
             <span>LaslesVPN</span> is a private virtual network that has unique features and has high security.
             </h1>

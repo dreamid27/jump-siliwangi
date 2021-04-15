@@ -4,7 +4,7 @@ function NavBar() {
     return (
         <nav className={styles.nav}>
             <ul>
-                <img src="/Logo.png"></img>
+                <img src="/logo.png"></img>
                 <li>About</li>
                 <li>Features</li>
                 <li>Pricing</li>

@@ -4,7 +4,7 @@ function Features() {
     return (
         <div className={styles.features}>
             <div className={styles.featuresLeft}>
-                <img src="/Illustration2.png"></img>
+                <img src="/illustration2.png"></img>
             </div>
             <div className={styles.featuresRight}>
                 <h1>
