@@ -1,126 +1,46 @@
-import Link from "next/link";
-import styles from "./Testimonial.module.scss";
-import Logo from "@public/logo.png";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styles from "./Testimonial.module.scss"
 
-function TestimonialSection() {
-  return (
-    <section className="hero-2">
-      <div className="testimonials">
-        <h1 className="testimonials-title">
-          Trusted by Thousands of Happy Customer
-        </h1>
-        <p className="testimonials-description">
-          These are the stories of our customers who have joined us with great
-          pleasure when using this crazy feature.
-        </p>
-      </div>
-
-      <div class="wrapper-card">
-        <div class="card">
-          <div class="card-title">
-            <img className="image-testimonials" src="/Illustration-3.png" />
-            <h3>Free Plan</h3>
-          </div>
-          <div class="card-description">
-            <ul>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Unlimited Bandwitch</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Encrypted Connection</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">No Traffic Logs</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Works an All Devices</h1>
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <h1>Free</h1>
-            <button type="button">Select</button>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-title">
-            <img className="image-testimonials" src="/Illustration-3.png" />
-            <h3>Standart Plan</h3>
-          </div>
-          <div class="card-description">
-            <ul>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Unlimited Bandwitch</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Encrypted Connection</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Yes Traffic Logs</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Works an All Devices</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Connect Anywhere</h1>
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <h1>$9 / mo</h1>
-            <button type="button">Select</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-title">
-            <img className="image-testimonials" src="/Illustration-3.png" />
-            <h3>Premium Plan</h3>
-          </div>
-          <div class="card-description">
-            <ul>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Unlimited Bandwitch</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Encrypted Connection</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Yes Traffic Logs</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Works an All Devices</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Connect Anywhere</h1>
-              </li>
-              <li>
-                <img className="image-list-testimonials" src="/check.svg" />
-                <h1 className="desc-list-testimonials">Get New Features</h1>
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <h1>$12 / mo</h1>
-            <button type="button">Select</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+export default class SimpleSlider extends Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        };
+        return (
+            <div className={styles.hero}>
+                <div className={styles.container}>
+                    <div>
+                        <h2> Single Item</h2>
+                        <Slider {...settings}>
+                            <div>
+                                <h3>1</h3>
+                            </div>
+                            <div>
+                                <h3>2</h3>
+                            </div>
+                            <div>
+                                <h3>3</h3>
+                            </div>
+                            <div>
+                                <h3>4</h3>
+                            </div>
+                            <div>
+                                <h3>5</h3>
+                            </div>
+                            <div>
+                                <h3>6</h3>
+                            </div>
+                        </Slider>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
-export default TestimonialSection;

@@ -4,87 +4,102 @@ import Logo from "@public/logo.png";
 
 function FooterSection() {
     return (
-        <div className={styles.footer}>
-            <div className={styles.innerFooter}>
-                <div className={styles.footerItems}>
-                    <Link href="/">
-                        <img src={Logo} alt="logo" />
-                    </Link>
-                    <p>
-                        <b>LaslesVPN</b> is a private virtual network that has
-                        unique features and has high security.
-                    </p>
-                    <div class="footer-bottom">
-                        &copy;2020Lasles<b>VPN</b>
+        <div className={styles.hero}>
+            <div className={styles.container}>
+                <div className={styles.footer}>
+                    <div className={styles.subscribe}>
+                        <div className={styles.left}>
+                            <h1>Subscribe Now for Get Special Features!</h1>
+                            <p>Let's subscribe with us and find the fun.</p>
+                        </div>
+                        <div className={styles.button}>Subscribe Now</div>
                     </div>
-                </div>
+                    <div className={styles.innerFooter}>
+                        <div className={styles.footerItems}>
+                            <Link href="/">
+                                <img src={Logo} alt="logo" />
+                            </Link>
+                            <p>
+                                <b>LaslesVPN</b> is a private virtual network
+                                that has unique features and has high security.
+                            </p>
+                            <div className={styles.socialMedia}>
+                                <a href="#">
+                                    <img src="/Facebook.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="/Instagram.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="/Twitter.png" />
+                                </a>
+                            </div>
+                            <div className={styles.footerBottom}>
+                                &copy;2020Lasles<b>VPN</b>
+                            </div>
+                        </div>
 
-                <div className={styles.footerItems}>
-                    <h3>Quick Links</h3>
-                    <div className={styles.border1}></div>
-                    <ul>
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>Search</li>
-                        </a>
-                        <a href="#">
-                            <li>Contact</li>
-                        </a>
-                        <a href="#">
-                            <li>About</li>
-                        </a>
-                    </ul>
-                </div>
+                        <div className={styles.footerItemsProduct}>
+                            <h3>Product</h3>
+                            <ul>
+                                <a href="#">
+                                    <li>Download</li>
+                                </a>
+                                <a href="#">
+                                    <li>Pricing</li>
+                                </a>
+                                <a href="#">
+                                    <li>Locations</li>
+                                </a>
+                                <a href="#">
+                                    <li>Servers</li>
+                                </a>
+                                <a href="#">
+                                    <li>Countries</li>
+                                </a>
+                                <a href="#">
+                                    <li>Blog</li>
+                                </a>
+                            </ul>
+                        </div>
 
-                <div className={styles.footerItems}>
-                    <h3>Recipes</h3>
-                    <div className={styles.border1}></div>
-                    <ul>
-                        <a href="#">
-                            <li>Indian</li>
-                        </a>
-                        <a href="#">
-                            <li>Chinese</li>
-                        </a>
-                        <a href="#">
-                            <li>Mexican</li>
-                        </a>
-                        <a href="#">
-                            <li>Italian</li>
-                        </a>
-                    </ul>
-                </div>
+                        <div className={styles.footerItemsProduct}>
+                            <h3>Engage</h3>
+                            <div className={styles.border1}></div>
+                            <ul>
+                                <a href="#">
+                                    <li>LaslesVPN ?</li>
+                                </a>
+                                <a href="#">
+                                    <li>FAQ</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tutorials</li>
+                                </a>
+                                <a href="#">
+                                    <li>About Us</li>
+                                </a>
+                                <a href="#">
+                                    <li>Privacy Policy</li>
+                                </a>
+                                <a href="#">
+                                    <li>Terms of Service</li>
+                                </a>
+                            </ul>
+                        </div>
 
-                <div className={styles.footerItems}>
-                    <h3>Contact us</h3>
-                    <div className={styles.border1}></div>
-                    <ul>
-                        <li>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            XYZ, abc
-                        </li>
-                        <li>
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            123456789
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            xyz@gmail.com
-                        </li>
-                    </ul>
-
-                    <div className={styles.socialMedia}>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-google-plus-square"></i>
-                        </a>
+                        <div className={styles.footerItemsProduct}>
+                            <h3>Earn Money</h3>
+                            <div className={styles.border1}></div>
+                            <ul>
+                                <a href="#">
+                                    <li>Affiliate</li>
+                                </a>
+                                <a href="#">
+                                    <li>Become Partner</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

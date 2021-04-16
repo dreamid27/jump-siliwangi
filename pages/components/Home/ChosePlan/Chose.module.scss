@@ -49,26 +49,10 @@
     transition: all 0.5s ease-in-out;
     flex-direction: column;
 
-    .cards {
-
-    }
     &:hover {
       border: 2px solid #f53838;
     }
 
-    &.popular {
-      margin-top: -10px;
-      margin-bottom: -10px;
-
-      .cardPrice {
-        margin: 50px;
-
-        h1 {
-          color: #3498db;
-          font-size: 60px;
-        }
-      }
-    }
   }
 
   .cardTitle {
@@ -121,6 +105,13 @@
   }
 
   .cardAction {
+
+    h1 {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      color: #0B132A;
+    }
     button {
       background: transparent;
       border: 2px solid #f53838;

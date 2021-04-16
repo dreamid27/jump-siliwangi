@@ -42,7 +42,7 @@ function ChosePlan() {
           </div>
           </div>
           <div className={styles.cardAction}>
-            <h1>Free</h1>
+            <h1><b>Free</b></h1>
             <button type="button">Select</button>
           </div>
         
@@ -80,12 +80,12 @@ function ChosePlan() {
           </div>
           </div>
           <div className={styles.cardAction}>
-            <h1>$9 / mo</h1>
+            <h1><b>$9</b> / mo</h1>
             <button type="button">Select</button>
           </div>
         </div>
         <div className={styles.card}>
-          <div clasName={styles.cards}>
+          <div className={styles.cards}>
           <div className={styles.cardTitle}>
             <img className={styles.imagePricing} src="/Illustration-3.png" />
             <h3>Premium Plan</h3>
@@ -120,7 +120,7 @@ function ChosePlan() {
           </div>
           </div>
           <div className={styles.cardAction}>
-            <h1>$12 / mo</h1>
+            <h1><b>$12</b> / mo</h1>
             <button type="button">Select</button>
           </div>
         </div>
